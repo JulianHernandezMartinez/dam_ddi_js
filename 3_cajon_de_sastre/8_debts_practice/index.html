@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <script src="./modcount.js" type="module"></script>
+  <title>Debts App</title>
+</head>
+
+<body>
+  <main id="root" class="container">
+    <h1>Apliacion de Deudas de Julian H copiada de JG</h1>
+    <section>
+      <h2>Operar</h2>
+      <form id ="operate" autocomplete="off">
+
+        <label for="personid">Persona</label>
+        <select id="personid">
+          <option value="0">(new)</option>
+        </select>
+
+        <input type="text" id="newperson" placeholder="nuevo nombre" />
+        <p id="existentname" color ="red" style="display: none;">¡Nombre ya existente!</p>
+        
+        <label for="operation">Operación</label>
+        <fieldset id ="options", label ="Operacion">
+          <input type="radio" id="borrower" name="operation" value="borrower"checked>
+          <label for="borrower">Presto</label>
+      
+          <input type="radio" id="lender" name="operation" value="lender">
+          <label for="lender">Tomo prestado</label>
+        </fieldset>
+
+        <label for="amount">Cantidad</label>
+        <input type="text" id="amount"/>
+        <input type="submit" value="Anota deuda"/>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Balance de deudas</h2>
+        <p id="nopendingdebts">No hay deudas pendientes</p>
+        <ul id="debts"></ul>
+    </section>
+  </main>  
+</body>
+
+</html>

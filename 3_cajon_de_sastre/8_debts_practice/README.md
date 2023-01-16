@@ -1,0 +1,3 @@
+Este proyecto trata de diseccionar debts y traducirlo al castellano
+1.- Crear un html dom en castellano.
+2.- ...

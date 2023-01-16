@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Maria",
+    "lender": true,
+    "quantity":10
+  },
+  {
+    "id": 2,
+    "name": "Pepe",
+    "lender": false,
+    "quantity":10
+  },  
+  {
+    "id": 3,
+    "name": "Ana",
+    "lender": false,
+    "quantity":7.5
+  },  
+  {
+    "id": 4,
+    "name": "Miguel",
+    "lender": true,
+    "quantity":8.9
+  }
+  ]

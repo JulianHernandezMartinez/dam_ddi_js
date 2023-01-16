@@ -1,0 +1,25 @@
+.iowe {
+  background-color: orange;
+}
+
+.owesme {
+  background-color: lightgreen;
+}
+
+#debts {
+  padding: 0;
+}
+
+#debts li {
+  list-style-type: none;
+  padding: 1em;
+  border: 3px solid transparent;
+}
+
+#debts li.blink {
+  border: 3px solid black;
+}
+
+.fielderror {
+  color: red;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debts App</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="#">
+  <script src="./controlrtm.js" type="module"></script>  
+</head>
+
+<body>
+  <main class="container">
+    <h1>Debts App</h1>
+    <section>
+      <h2>Operate</h2>
+      <form id="perform" autocomplete="off">
+        <label for="personid">Person</label>
+        <select id="personid">
+          <option value="0">(new)</option>
+        </select>
+        <input type="text" id="personname" placeholder="new name" />
+        <small id="personiderror" class="fielderror"></small>
+        <label for="operation">Operation</label>
+        <fieldset>
+          <input type="radio" name="operation" value="give" checked="true" />
+          <label for="giveop">I give</label>
+          <input type="radio" name="operation" value="get" />
+          <label for="getop">I get</label>
+        </fieldset>
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" />
+        <small id="amounterror" class="fielderror"></small>
+        <input type="submit" id="submitbutton" value="Submit" />
+      </form>
+    </section>
+    <section>
+      <h2>Debts</h2>
+      <p id="nopending">No pending debts</p>
+      <ul id="debts"></ul>
+    </section>
+  </main>
+</body>
+
+</html>
