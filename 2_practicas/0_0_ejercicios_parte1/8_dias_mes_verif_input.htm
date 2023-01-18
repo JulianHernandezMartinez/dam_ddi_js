@@ -4,10 +4,10 @@
     "incluir condiciones de verificacion 
     de los datos de entrada -->
 
-<!-- Agregar código al programa que muestra 
-    el número de días de un mes, para que el
-    usuario solo pueda introducir números del
-    1 al 12.-->
+<!--Agregar código al programa del ejercicio 5
+    que muestra el número de días de un mes, 
+    para que el usuario solo pueda introducir 
+    números del 1 al 12.-->
 
 
 
@@ -25,10 +25,14 @@
     <script>
     let mes;
     mes=prompt('Introduzca el número del mes:','');
-    mes=parseInt(mes);
     (mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes ==10 || mes==12)? document.write('Este mes tiene 31 dias.'):
     ((mes==2)? document.write('Este mes tiene 28 o 29 dias(en años bisiestos).'):(mes==4 || mes==6 || mes==9 || mes ==11)? document.write('Este mes tiene 30 dias.'): document.write('Ese numero de mes no es valido (debe ser de 1..12).' ));
     
+    // ** solucion de Julian Hernandez
+    // puede haber otras e incluso mehoras
+    // ha consistido en anidar una condicon
+    // y quitar el parseint 
+     
     </script>
     </head>
     </html>
