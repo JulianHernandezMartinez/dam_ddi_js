@@ -1,0 +1,37 @@
+<!-- Aqui el enunciado -->
+
+<!-- Pide la edad? para comprobar si es 
+    mayor de edad y puede votar, o si es 
+    menor de edad y es demasiado joven.
+
+    Si la edad es menor de 18, final vale 
+    "Demasiado joven", si es mayor que 18: 
+    "Mayor de edad"-->
+
+<!-- Proposito de aprendizaje
+    "usar isNaN() para verificar que la 
+     entrada es un numero o no y if..else
+    y/o notacion abreviada 
+    condicion? true:false -->
+
+
+<!-- Opcion de mejora
+    hazlo usando la notacion abreviada 
+    condicion? true:false -->
+
+
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+let edad, final;
+edad = prompt("edad?", "0");
+console.log(isNaN(edad)); // por poco manejo de  debugging
+console.log("logging algo") // por poco manejo (consola en debug - logs)
+isNaN(edad)? final = "Error. No es un número":(edad<18? final="Demasiado joven" : final="Mayor de edad");
+document.write(final);
+</script>
+</head>
+</html>

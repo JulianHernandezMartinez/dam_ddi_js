@@ -1,0 +1,64 @@
+<!-- Aqui el eunciado -->
+
+<!-- Pide un dato con la pregunta 
+    "Introduce número menor que 10" 
+    y si es mayor que 10, muestras 
+    un mensaje "Fin del programa"
+    Si el numero es <10, solicita 
+    de nuevo un numero menor que 10-->
+
+<!-- Proposito de aprendizaje
+    "Como NO permitir valores 
+    incorrectos" y uso de "while x"-->
+
+
+
+
+
+
+    
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+let num =1; let dato;
+while (num<10)
+{
+dato=prompt('Introduce número menor que 10:','');
+
+num=parseInt(dato);
+
+// ¿es necesario el parseInt()?
+// num=dato;
+
+// ¿seria mejor hacer un num=+dato;?
+// num=+dato;
+
+document.write(` ${num} <br> `);
+}
+document.write("<p>Fin del programa</p>");
+
+
+/** parece que solo tiene efecto en la representacion
+en la consola? */
+
+/** la opcion mas optima podria ser pareceria */
+
+dato=1;
+while (dato<10)
+{
+dato=prompt('Introduce de NUEVO número menor que 10:','');
+document.write(` ${dato} <br> `);
+}
+document.write("Fin de NUEVO del programa");
+
+// document.write("Y Fin del uso de document.write");
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/write
+
+// ojo como se comporta referenciando un objeto <p> parrafo </p>
+
+</script>
+</head>
+</html>
+
