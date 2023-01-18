@@ -21,13 +21,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="favicon.ico">
 <script>
 let num =1; let dato;
 while (num<10)
 {
 dato=prompt('Introduce número menor que 10:','');
-
+console.log(dato)
 num=parseInt(dato);
+console.log(num)
 
 // ¿es necesario el parseInt()?
 // num=dato;
@@ -35,15 +37,18 @@ num=parseInt(dato);
 // ¿seria mejor hacer un num=+dato;?
 // num=+dato;
 
+
+
 document.write(` ${num} <br> `);
 }
 document.write("<p>Fin del programa</p>");
 
 
-/** parece que solo tiene efecto en la representacion
+/** parece que solo tiene efecto 
+en la representacion
 en la consola? */
 
-/** la opcion mas optima podria ser pareceria */
+/** la opcion mas optima podria ser: */
 
 dato=1;
 while (dato<10)
@@ -51,6 +56,7 @@ while (dato<10)
 dato=prompt('Introduce de NUEVO número menor que 10:','');
 document.write(` ${dato} <br> `);
 }
+document.write("<p>Fin del NUEVO programa</p>");
 document.write("Fin de NUEVO del programa");
 
 // document.write("Y Fin del uso de document.write");
