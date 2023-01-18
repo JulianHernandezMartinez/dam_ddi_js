@@ -31,7 +31,9 @@ console.log("OPERADORES LOGICOS || && y ?? != ")
  console.log(tres > 0 && menosdos < 0); // true
  console.log(tres > 0 && menosdos > 0); // falsee
  
-// ?? nullis coalescing operator - operador de fusion nula
+
+ // ?? nullish coalescing operator - operador de fusion nula
+
 const foo = null ?? 'default string';
 console.log(foo);
 // Expected output: "default string"
@@ -55,8 +57,7 @@ console.log("OPERADORES LOGICOS CON ASIGNACION &&= ||= y ??= ")
 // ??=
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment
 
-
- console.log("OPERADORES COMPARADORES > < >= <= != == === ")
+console.log("OPERADORES COMPARADORES > < >= <= != == === ")
 
 /** comparadores = > < >= <= != == (iguales) 
  * === (estrictamente iguales) */

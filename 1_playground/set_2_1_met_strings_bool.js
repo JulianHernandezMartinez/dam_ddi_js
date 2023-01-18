@@ -34,3 +34,5 @@ console.log ('********** Metodos de Booleanos**********')
 /** metodos de Booleam*/
 let verdaderoofalso = true;
 console.log(verdaderoofalso.valueOf()); // true
+verdaderoofalso = false;
+console.log(verdaderoofalso.valueOf()); // false
