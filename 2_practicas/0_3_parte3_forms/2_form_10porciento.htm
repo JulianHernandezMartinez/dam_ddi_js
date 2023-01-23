@@ -1,0 +1,44 @@
+<!--ENUNCIADO
+    
+    haz un programa que recoja una cantidad
+    mediante un form (formulario) y saque el 
+    10%     del valor del numero iuntroducido
+   -->
+    
+    <!--Proposito(s) de aprendizaje
+        objeto form del dom  --->
+
+    <!-- Opcionalmente escribelo en un 
+        elemento parrafo <p><\p> del DOM-->
+         
+       
+
+
+
+
+
+
+ 
+    
+
+<!-- ESCRIBE AQUI LA SOLUCION -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> 10% en formularios </title>
+<script>
+    function calcula10porciento()
+    {
+        let cantidad = document.fdatos.entrada.value
+        document.writeln(`El 10% de ${cantidad} es ${0.1*cantidad}`)
+    }
+</script>
+</head>
+
+<body>
+    <form name="fdatos">Escribe la cantidad: <input type="text" size="10" name="entrada"/>
+    <input type="button" value="Pulsa aquí" onclick="calcula10porciento()" />
+    </form>
+</body>
+</html>
