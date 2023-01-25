@@ -1,0 +1,46 @@
+
+<!-- Aqui el enunciado 
+
+En base al siguiente código, realizar 
+un programa que muestra en pantalla un 
+saludo al nombre de dos personas 
+introducido por teclado -->
+
+<!-- Proposito(s) de aprendizaje
+    getElementById " --->
+     
+
+
+
+
+
+
+ 
+    
+
+<!-- ESCRIBE AQUI LA SOLUCION -->
+
+<!DOCTYPE html>
+<html><head>
+<meta content="text/html; charset=utf-8">
+<script>
+
+</script>
+</head>
+<body>
+<h1>Función con dos parámetros</h1>
+<p>Saluda a dos personas.</p></br>
+<p id="salida">Aquí el resultado</p>
+<script>
+'use strict'
+
+function saludo(persona1,persona2){
+    document.getElementById("salida").innerHTML = `Hola ${persona1} y ${persona2}`; // 3
+}
+
+let nombre1=prompt('Introduce nombre:','');
+let nombre2=prompt('Introduce otro nombre:','');
+saludo(nombre1,nombre2);
+</script>
+</body>
+</html>

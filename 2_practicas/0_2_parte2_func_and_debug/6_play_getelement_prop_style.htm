@@ -1,0 +1,52 @@
+<!-- Aqui el enunciado 
+
+Escribe un programa que saque en pantalla 
+un mensaje "Curso de ECMAScript6" en un 
+parrafo y dos botones con nombres "azul" 
+y "rojo", y que al pulsar el boton 
+"azul" cambie el color del mensaje
+"Curso de ECMAScript6" a color azul y 
+cuando  se pulse el "rojo" lo cambie a rojo.
+-->
+
+<!-- Proposito(s) de aprendizaje
+    cambios de propiedad estilos CSS 
+    obj.style.color" --->
+     
+
+
+
+
+
+
+ 
+    
+
+<!-- ESCRIBE AQUI LA SOLUCION -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Ejemplo getElementById </title>
+<script>
+    function CambiaColor(nombreColor='black') {
+        let obj = document.getElementById("informacion");
+        obj.style.color = nombreColor;
+        obj.style.background = 'yellow';
+    }
+</script>
+</head>
+<body>
+    <p id="informacion">Curso de ECMAScript6</p>
+    <button onclick="CambiaColor('blue');">azul</button>
+    <button onclick="CambiaColor('red');">rojo</button>
+    <button onclick="CambiaColor();">restablecer</button>
+</body>
+</html>
+
+<!-- play, 
+    a.- set default colour in function to black
+    b.- add a new button with text "restablece"
+    c.- modifica otra propiedad del parrafo.e.g.backgroud to amarillo.
+-->

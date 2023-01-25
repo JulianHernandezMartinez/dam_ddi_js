@@ -30,15 +30,22 @@ cuando  se pulse el "rojo" lo cambie a rojo.
 <head>
 <title> Ejemplo getElementById </title>
 <script>
-function CambiaColor(nombreColor) {
-let obj = document.getElementById("informacion");
-obj.style.color = nombreColor;
-}
+    function CambiaColor(nombreColor) {
+        let obj = document.getElementById("informacion");
+        obj.style.color = nombreColor;
+        // obj.style.background = 'yellow';
+    }
 </script>
 </head>
 <body>
-<p id="informacion">Curso de ECMAScript6</p>
-<button onclick="CambiaColor('blue');">azul</button>
-<button onclick="CambiaColor('red');">rojo</button>
+    <p id="informacion">Curso de ECMAScript6</p>
+    <button onclick="CambiaColor('blue');">azul</button>
+    <button onclick="CambiaColor('red');">rojo</button>
 </body>
 </html>
+
+<!-- play, 
+    a.- set default colour in function to black
+    b.- add a new button with text "restablece"
+    c.- modifica otra propiedad del parrafo.e.g.backgroud to amarillo.
+-->
