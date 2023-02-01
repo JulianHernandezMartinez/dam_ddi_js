@@ -6,22 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-  <title>Hello, PicoCSS!</title>
+  <title>Hello, list forms input!</title>
 </head>
 
 <body>
   <main class="container">
     <h1>Hello, list input!</h1>
+    <div id ="entrada">
 
-    <form name="fdatos">Introduce número: <input type="text" size="10"\><b>X</b>
-        <select id="lista" onchange="calcula()">
-            <option value="1" selected>uno</option>
-            <option value="2">dos</option>
-            <option value="3">tres</option>
-            <option value="4">cuatro</option>
-        </select>
-    </form>
-
+      <form autocomplete= "off" id="miform" name="fdatos">
+        <input type="text" id="numberInp" placeholder="introduce numero" />
+        <b>X</b>
+          <select id="lista">
+              <option value="1" selected>uno</option>
+              <option value="2">dos</option>
+              <option value="3">tres</option>
+              <option value="4">cuatro</option>
+          </select>
+      </form>
+    </div>
   <div id ="salida"></div>
   </main>
 
