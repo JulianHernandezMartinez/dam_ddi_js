@@ -5,7 +5,7 @@ let countdown;
 // controls
 
 // associate numberInp to <input> with id "number" within the <form>
-// associate countSpn to <span> element wit id "countdown"
+// associate countSpn to <span> element with id "countdown"
 // associate clickmeBtn to <button> with id "clickme"
 // associate form to the form within div "one"
 

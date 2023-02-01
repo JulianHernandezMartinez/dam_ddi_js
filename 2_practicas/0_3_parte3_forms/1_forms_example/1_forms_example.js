@@ -4,14 +4,11 @@ const nombreOut = document.querySelector('#nombre_out')
 
 const myform = document.querySelector('#myform');
 
-mydiv.textContent = 'How are you feeling today?';
-
-form.addEventListener('submit', (event) => {
+myform.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log("clicked!");
-    const name = nameInp.value;
-    nombreOut.textContent=name;
+    nombreOut.textContent=nombreInp.value;
 
     div1.style.display = 'none';
     div2.style.display = 'block';
-});
+}); 

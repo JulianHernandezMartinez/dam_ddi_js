@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <title>Hello, PicoCSS!</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Hello, list input!</h1>
+
+    <form name="fdatos">Introduce número: <input type="text" size="10"\><b>X</b>
+        <select id="lista" onchange="calcula()">
+            <option value="1" selected>uno</option>
+            <option value="2">dos</option>
+            <option value="3">tres</option>
+            <option value="4">cuatro</option>
+        </select>
+    </form>
+
+  <div id ="salida"></div>
+  </main>
+
+  <script src="./6_list_input.js"></script>
+</body>
+
+</html>
