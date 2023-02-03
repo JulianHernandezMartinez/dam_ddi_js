@@ -3,8 +3,8 @@ const listaInp =document.querySelector('#lista')
 const resultadotOut = document.querySelector('#salida')
 const diventrada = document.querySelector('#entrada')
 
-// console.log(numberInp)
-// console.log(listaInp)
+console.log(numberInp)
+console.log(listaInp)
 
 function calcula(operador1,operador2)
 {
