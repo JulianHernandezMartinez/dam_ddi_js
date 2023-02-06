@@ -31,8 +31,8 @@
 let dia,mes,año;
 mes=prompt('Introduzca el número del mes:','');
 mes=parseInt(mes);
-(mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes ==10 || mes==12)? document.write('Este mes tiene 31 dias.'):
-((mes==2)? document.write('Este mes tiene 28 o 29 dias(en años bisiestos).'):document.write('Este mes tiene 30 dias.'));
+(mes==1 || mes==3)? 'Este mes tiene 31 dias.' :
+((mes==2)? 'Este mes tiene 28': 'Este mes tiene 30');
 
 </script>
 </head>
