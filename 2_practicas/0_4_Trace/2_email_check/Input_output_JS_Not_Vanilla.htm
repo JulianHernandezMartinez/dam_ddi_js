@@ -1,3 +1,16 @@
+<!-- Aqui el enunciado y proposito de aprendizaje-->
+
+<!-- Proposito de aprendizaje
+    Manejo de metodos de Strings y condicionales
+    con "if..else.." o "condicion? true:false"
+    y console.log-->
+
+<!-- Se trata de hacer una funcion de revisaEmail(emailexpresion()
+   que haga las revisiones descritas en el html
+-->
+
+<!-- console-->
+
 
 <!DOCTYPE html>
 <html><head>
@@ -23,7 +36,9 @@
 
 <p></p></br>
 <p>"  nombre.apellido@dominio.com   "-> correcto</p>
-<p>" nombre apellido@dominio.com "-> incorrecto</p>
+<p>"  nombre@dominio.es   "-> correcto</p>
+<p>"  p.p.p@p.p.se " -> correcto</p>
+<p>"  nombre apellido@dominio.com "-> incorrecto</p>
 <p>"  nombre,apellido@dominio.com  "-> incorrecto</p>
 <p>"  .nombre.apellido@dominio.com   "-> incorrecto</p>
 <p>"  nombre.apellido.@dominio.com   "-> incorrecto</p>
@@ -40,6 +55,11 @@
 
 function revisaEmail(expresionemail) {
   console.log(expresionemail);
+  // esta es una funcion Fake que saca aprox la mitad de las veces
+  // email INCORRECTO y otra mitad Email correcto
+  // se trata de realizar la funcion revisaEmail que cumpla con 
+  // lo solicitado
+
   let result = 'Email INCORRECTO';
   let base_ramdom=Math.random();
   let suerte = base_ramdom*6;
