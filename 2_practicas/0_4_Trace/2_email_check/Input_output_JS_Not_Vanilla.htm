@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta content="text/html; charset=utf-8">
+<script>
+
+</script>
+</head>
+<body>
+<p>Debes realizar una funcion que recibe una cadena con un email y verifica ciertos aspectos</p>
+<p>Asegurar que no hay espacios.</p>
+<p>Asegurar que hay una sola arroba @</p>
+<p>Asegurar que no hay comas</p>
+<p>Asegurar que los puntos no estan al inicio o final ni justo antes o despues de la arroba</p>
+<p>Asegurar que los puntos no estan seguidos</p>
+<p>Asegurar que un grupo de carateres no son permitidos $%/...)</p>
+
+
+<p></p></br>
+
+
+<p id="salida">AQUI EL RESULTADO -------> </p>
+
+<p></p></br>
+<p>"  nombre.apellido@dominio.com   "-> correcto</p>
+<p>" nombre apellido@dominio.com "-> incorrecto</p>
+<p>"  nombre,apellido@dominio.com  "-> incorrecto</p>
+<p>"  .nombre.apellido@dominio.com   "-> incorrecto</p>
+<p>"  nombre.apellido.@dominio.com   "-> incorrecto</p>
+<p>"  nombre.apellido@.dominio.com   "-> incorrecto</p>
+<p>"  nombre.apellido@dominio.com.   "-> incorrecto</p>
+<p>"  nombre.apellido@dominio.com.   "-> incorrecto</p>
+<p>"  nombre..apellido@dominio.com.   "-> incorrecto</p>
+<p>"  nombre%apellido@dominio.com.   "-> incorrecto</p>
+
+
+
+<script>
+'use strict'
+
+function revisaEmail(expresionemail) {
+  console.log(expresionemail);
+  let result = 'Email INCORRECTO';
+  let base_ramdom=Math.random();
+  let suerte = base_ramdom*6;
+  suerte > 3 ? result = 'Email correcto' : result = 'Email INCORRECTO';
+  console.log(result);
+  return result;
+} 
+
+function presentaensalida(resultado){
+    document.getElementById("salida").innerHTML = `AQUI EL RESULTADO -------> ${resultado}`; // 3
+}
+
+let expresionemail = prompt('Introduce email para verificar:','');
+let resultado = revisaEmail(expresionemail);
+presentaensalida(resultado);
+
+</script>
+</body>
+</html>
