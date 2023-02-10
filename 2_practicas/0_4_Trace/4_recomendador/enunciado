@@ -1,0 +1,32 @@
+
+Titulo: Recomendador de actividades
+
+Ejercicio:
+
+Debes realizar un recomendador de actividades 
+en función de la respuesta a tres preguntas. 
+
+Se elegiran las respuestas con un elemento de PicoCSS (checkbox, radiobutton, swith)"
+
+   ¿Es de día?
+   ¿Estás cansada/o?
+   ¿Estás sola/o?
+
+La actividad recomendada será:
+
+    1.- Si es de día, no estás cansada/o y estás 
+    sola/o, running.
+
+    2.-Si es de día, estás cansada/o y estás 
+    sola/o, "siesta".
+
+    3.-Si es de día y no estás solo, "cine".
+
+    4.-Si es de noche, "dormir"
+
+¿Que elegiriamos para recoger las respuestas?
+checkbox, radiobuton, switches?
+
+https://picocss.com/examples/preview
+    
+
