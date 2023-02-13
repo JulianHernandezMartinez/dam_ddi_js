@@ -18,13 +18,14 @@ que permanezca el formulario y muestre
 Debe permitir expresiones con un solo numeros
 "+a" o "- a" y retornara "a" o "-a"
 
-/**
- * FUNCION NO PERMITIDA
- * 
-function operaSimple(str) {
-  return Function(`'use strict'; return (${str})`)()
-}
-*/
 
+* Valores de pruebas
+*
+* empty -> 0
+* spaces -> 0
+* -1 -> -1
+* +1 --> 1
+* 1 -> 1
+* -1+1 ->0
 
 
