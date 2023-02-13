@@ -9,7 +9,7 @@ que retorne "expresioninvalida"
 
 En el caso de resultado numerico, que 
 oculte el formulario y presente en un parrafo 
-una salida del tipo "RESLTADO = x"
+una salida del tipo "RESULTADO = x"
 
 En el caso de resultado "expresioninvalida" 
 que permanezca el formulario y muestre 
