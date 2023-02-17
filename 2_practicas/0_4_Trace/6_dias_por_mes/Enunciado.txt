@@ -9,15 +9,15 @@ Elabora un interfaz que presente:
     aparece por defecto,por ejemplo, "mayo", detecte el cambio
     y haga lo siguiente:
         a) Oculte la input list.
-        b) Presente un mensaje del tipo:
+        b) Actualice la cabecera a "dias por mes - Nombre del alumn@"
+        c) Presente un mensaje del tipo:
          "mayo tiene 31 dias"
-        c) Tambien presente un boton de "atras".
-        d) Actualice la cabecera a "dias por mes - Nombre del alumn@"
+        d) Tambien presente un boton de "atras".
         e) Al pulsar el boton "atras" debe mostrar de nuevo el 
         "input list" con selecciona y meses.
 
-4.- Si se selecciona la opcion "selecciona", muestre un 
-    del tipo "selecciona un mes".
+4.- Si se selecciona la opcion "selecciona", muestre un mensaje
+    del tipo "selecciona un mes" sin ocultar la input list.
 
     Meses y dias
 

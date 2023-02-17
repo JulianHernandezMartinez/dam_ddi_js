@@ -1,0 +1,41 @@
+Sobre la practica anterior de cronometro 
+mejorado, inlcuir un boton nuevo de 
+"iniciar a O seg. y dec seg "SIN LANZAR",
+para establecer a cero los contadores de 
+Segundos y decimas de segundo.
+
+Esta version nueva debera
+almacenar informacion de estado,
+para que en el caso de recargar la pagina
+restablezca la ultima vista, y su 
+funcionamiento, por donde iba.
+
+Es decir que si estaba 
+contando con segundos y decimas, prosiga 
+en esa "vista", y por donde llevaba la cuenta 
+
+
+
+
+Cronometro de Segundos y decimas de segundo.
+
+Genera un interfaz que al cargar, presente:
+
+Cronometro
+seg:00 Dec:00
+
+Con 4 botones
+Start
+Detener
+Detener dec. de segundo
+Reiniciar
+
+Con el siguiente funcionamiento:
+
+Al pulsar "Start" se arrancan los contadores
+de Seg. (segundos) y Dec. (decimas de segundo)
+
+Y se oculta este boton, apareciendo uno nuevo de "Stop":
+
+Al pulsar "Detener dec. de segundo" se detiene 
+el contador de "Dec." y continua el de "Seg."
