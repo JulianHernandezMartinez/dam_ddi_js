@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <title>Nota media</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Nota media</h1>
+    <div id="notadiv">
+        <form id ="newform" name="fdatos">
+            <input id="notainput" name ="entrada" type="text"/>
+            <input type="submit" value="Añade nota" />
+        </form>
+    </div>
+    <div id="mediapart" style="display:none">
+        <p id="salida" >La media es <span id="media"></span></p>
+        <!-- <p id="salida" style="display: none;">Hola <span id="nombre_out">0</span></p> -->
+    </div>
+    <button id = "calcula" style="display:block">Calcula media</button>
+  </main>
+</body>
+<script src="./2_nota_media.js"></script>
+</html>
