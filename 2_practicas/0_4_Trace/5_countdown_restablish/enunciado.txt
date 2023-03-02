@@ -1,0 +1,12 @@
+Haz una version de la practica Countdown en la 
+que se modifique el comportamiento de la siguiente 
+manera:
+
+Una vez que se inicia la cuenta atras, si se recarga 
+la pagina debe continuar con la cuenta atras ejecutandose
+en el mismo punto que estaba.
+
+Si no se ha iniciado la cuenta atras, o ya ha finalizado, 
+y se recarga la pagina, que presente la pagina de inicio 
+para recoger el valor inicial de la cuenta atras.
+
