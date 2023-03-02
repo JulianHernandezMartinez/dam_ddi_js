@@ -1,0 +1,14 @@
+Realiza un interfaz que tenga un formulario de
+de entrada y dos botones "Añadir nota" y "Calcula media"
+
+En el formulario se podran ir recogiendo notas que
+se iran almacenando en un array, y que se iran 
+mostrando en una lista en pantalla.
+
+Una vez que se hayan metido al menos una nota, 
+se podra pulsar el boton de "Calcula media" que hara
+que desaparezca el formulario y presente la media.
+
+Si se pulsa el boton de "Calcula media" sin haber 
+incluido ninguna nota, se dara un mensaje en rojo que 
+advierta de que no hay notas.
