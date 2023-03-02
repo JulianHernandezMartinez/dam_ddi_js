@@ -51,7 +51,7 @@ function onSubmit(event) {
   if (createPerson) {
     let invalidName = false; /**inicializa las variables de nombre invalido */
     console.log(personnameTxt.value);
-    newName = personnameTxt.value?.trim(); /** Recoge el texto del puntero, con la función trim elimina caracteres en balnco antes y despues */
+    newName = personnameTxt.value?.trim(); /** Recoge el texto del puntero, con la función trim elimina caracteres en blanco antes y despues */
     console.log(newName);
     if (!nameIsValid(newName)) {
       errors = true;
