@@ -10,8 +10,8 @@ myform.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log("clicked!");
     numeroOut.textContent=numeroInp.value;
-    cuadrado.textContent = Number(numeroInp.value);
-    cubo.textContent = Number(numeroInp.value);
+    cuadrado.textContent = Number(numeroInp.value)**2;
+    cubo.textContent = Number(numeroInp.value)**3;
 
     div1.style.display = 'none';
     div2.style.display = 'block';
