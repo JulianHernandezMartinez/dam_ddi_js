@@ -59,3 +59,26 @@ console.log("OPERADOR COMMA (,) ULTIMO VALOR EVALUADO");
 
   console.log(x);
   // expected output: 100
+
+
+  // Strings Interpolation
+  // se emplea ampliamente construyendo html que se renderiza
+
+const nameAbdul="Abdul Rawoof"
+let salary = 18000
+let increment = 2000
+
+console.log(`Employee name is ${nameAbdul} and his salary after increment is ${salary+increment}$`)
+
+// Multiline String ( alternative to \n), solo requiere que se esciban en lineas diferentes
+
+const edad = 4.5
+
+const edadTierra = `Se estima que la Tierra tiene ${edad} mil millones de años.
+
+Los científicos han rastreado la Tierra en busca de las rocas más antiguas para precisar fechas radiométricamente.
+
+En el noroeste de Canadá, descubrieron rocas de unos 4.030 millones de años.
+`;
+
+console.log(edadTierra)
