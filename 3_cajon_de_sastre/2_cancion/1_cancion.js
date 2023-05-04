@@ -1,5 +1,6 @@
 'use strict'
 console.log('Hello, PicoCSS!');
+console.log('Modifiado desde Dell')
  
 let arr_frases_cancion = ["Hola Don Pepito","Hola Don José","¿Paso usted ya por casa?","Por su casa yo pase","¿vio usted a mi abuela?","a su abuela yo la vi","adios don Pepito","adios don Jose"
 ];
