@@ -1,10 +1,8 @@
-
+'use strict'
 console.log('PlayGround de JS!');
 
 const mydiv = document.querySelector('#mydiv');
 mydiv.textContent = 'Terreno de Juegos - operadores aritmeticos, In_place, etc.';
-
-'use strict';
 
 /* let and const keywords for variables in Js */
 /* see and practice -Difference between var, let and const keywords in JavaScript-
@@ -13,6 +11,12 @@ mydiv.textContent = 'Terreno de Juegos - operadores aritmeticos, In_place, etc.'
 let namePerson = "Julian";
 let numberPerson = 666666;
 let ciclistPerson = true;
+let resultadoSuma;
+let resultadoResta;
+let resultadoDivision;
+let resultadoMultiplicacion;
+let resultadoExponencial;
+let resultadoResto;
 
 /* OPERADORES https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators */
 
