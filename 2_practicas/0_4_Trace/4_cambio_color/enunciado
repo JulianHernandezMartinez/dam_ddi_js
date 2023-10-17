@@ -1,8 +1,0 @@
-Escribe un programa que saque en pantalla 
-un mensaje "Curso de ECMAScript6" en un 
-parrafo y dos botones con nombres "azul" 
-y "rojo", y que al pulsar el boton 
-"azul" cambie el color del mensaje
-"Curso de ECMAScript6" a color azul y 
-cuando  se pulse el "rojo" lo cambie a rojo.
--
