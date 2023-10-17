@@ -66,8 +66,10 @@ console.log("OPERADORES COMPARADORES > < >= <= != == === ")
  console.log(menosdos<tres);//true
  console.log('3'>= tres);//true
  console.log('-2'== menosdos);//true
+ console.log(typeof(menosdos)); // 
  console.log(-2===menosdos) //true - estrictamente iguales
  console.log('-2'=== menosdos);//false 
+ console.log(typeof('-2'));
  console.log(-2<0);//true
 
  console.log("OPERADOR CONDICIONAL el clasico 'IF X THEN z ELSE y'")

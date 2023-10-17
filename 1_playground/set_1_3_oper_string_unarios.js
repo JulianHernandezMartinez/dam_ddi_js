@@ -50,10 +50,17 @@ console.log("OPERADOR COMMA (,) ULTIMO VALOR EVALUADO");
 
   let x = 1;
 
-  x = (x++,x,x++,x); 
+  x = (x++,x++,x); 
 
   console.log(x);
   // expected output: 3
+
+  let y = 7;
+
+  y = (++y,++y); 
+
+  console.log(y);
+  // expected output: 9
 
   x = (2, 3, 4, 3, 2, 100);
 
