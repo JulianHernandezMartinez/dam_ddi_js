@@ -1,10 +1,8 @@
-
+'use strict';
 console.log('PlayGround de JS!');
 
 const mydiv = document.querySelector('#mydiv');
 mydiv.textContent = 'Terreno de Juegos - Objetos y Arrays';
-
-'use strict';
  
 /* ARRAYS */
 
