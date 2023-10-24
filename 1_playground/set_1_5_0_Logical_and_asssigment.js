@@ -71,3 +71,4 @@ console.log(a.duration);
 console.log(Boolean(d.speed))
 d.speed ??= 25;
 // Expected output: 25
+console.log(d.speed);

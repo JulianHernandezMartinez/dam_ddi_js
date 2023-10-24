@@ -14,12 +14,11 @@ while (n < 3) {
   console.log(n)
 }
 
-console.log(n);
 // Expected output in console: 
 //1 
 //2 
 //3
-//3
+
 
 console.log ("Do--While----Do--while---")
 
@@ -47,7 +46,10 @@ function testNum(a) {
   }
   
   console.log(testNum(-5));
-  // Expected output: "NOT positive"
+  console.log(testNum(2));
+
+  // Expected output: "NOT positive" for "-5"
+
 
 console.log ('FOR - FOR - FOR')
 
@@ -59,7 +61,7 @@ for (let i = 0; i < 9; i++) {
 
 console.log(str);
 
-// Expected output: 01234567
+// Expected output: 012345678
 
 
 console.log (" --FOR--FOR--RECORRIENDO UN ARRAY BIDIMENSIONAL---")
@@ -75,3 +77,10 @@ console.log(p);
 for (let i = 0, j = 2; i <= 2; i++, j--) {
   console.log(`p[${i}][${j}] = ${p[i][j]}`);
 } 
+
+
+let z= 0;
+while (z <= 10) {
+  console.log('5 x ' + z + ' = ' + 5 * z);
+  z= z + 1; 
+}
