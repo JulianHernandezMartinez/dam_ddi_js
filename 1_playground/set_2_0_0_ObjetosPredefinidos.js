@@ -2,7 +2,6 @@
 
 // ejemplos tomados desde https://xguaita.github.io/mtig-js/modulo3/
 
-
 let c= 'H o l a', // Tipo primitivo
 b= new String('Hola'); // Objeto String
 
