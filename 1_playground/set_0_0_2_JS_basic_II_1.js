@@ -38,3 +38,38 @@ muchosArgumentos('porquetu', 'porqueyo','porquenosotros',razones,'porquelaabuela
 operator este siempre debe ser el último en 
 la definición. En este caso se le denomina 
 REST operator */
+
+// destructuring
+
+let [a,b]= [1,2];
+console.log(a,b);
+
+const persona = {
+    nombre: 'Pedro',
+    apellidos: 'Pereda Mellado',
+    edad: 53,
+    profesion: 'Informático',
+}
+
+let {nombre, apellidos, ...otrosDatos} = persona;
+
+console.log(nombre, apellidos, otrosDatos);
+
+// para reflexionar
+// ¿Qué hace este código?:
+
+const useState = () =>  ['valor', () => {} ];
+
+const [valor, setValor] = useState();
+
+console.log(valor, setValor)
+
+// Ternario: ? (igual que en Java)
+const activo = false;
+const mensaje1 = (activo) ?  'Activo' : 'No Activo';
+
+const activo2 = true;
+console.log(mensaje1);
+// También nos encontramos muchos:
+const mensaje2 = activo2 && 'Activo';
+console.log(mensaje2)
