@@ -21,6 +21,9 @@ console.log(typeof x);
 console.log(typeof(b));
 
 let c= new Array(20); // Array vacío de 20 elementos
+console.log(c);
+console.log(c[1]);
+
 let d= [20]; // Array de un elemento
 let e= new Array(10, 20, 30, 40); // Array de 4 elementos
 let f= [10, 20, 30, 40]; // Array de 4 elementos
@@ -42,10 +45,13 @@ console.log('Tamaño', arr1.length);
 arr1= [10, 20, 30];
 console.log('Tamaño', arr1.length);
 arr1[10]= 1000;
-console.log('Tamaño', arr1.length);
+console.log('Tamaño', arr1.length); // 11
+console.log(arr1);
 console.log('Índice 5:', arr1[5]);
 arr1.length= 2;
 console.log(arr1);
+arr1.length=3;
+console.log(arr1)
 
 // Metodos de array
 
@@ -53,7 +59,7 @@ let arr2= ['azul', 'rojo', 'verde', 'amarillo'];
 console.log('verde?', arr2.indexOf('verde'));
 console.log('negro?', arr2.indexOf('negro'));
 arr2.unshift('blanco');
-console.log(arr2.join('-'));
+console.log(arr2.join('-')); // 
 
 // recorrer los elementos de un array
 
@@ -67,8 +73,13 @@ for (let i in arr2) console.log(arr2[i]);
 
 let arr3 = [100, 200, ['a', 'b']];
 let h = arr3[2];
+console.log(h);
 
 // h[1]= 'X';
-// a[2][2]= 'Y';
+console.log(h[1]);
+// arr3[2][2]= 'Y';
+console.log(arr3[2][1]) // "b"
+console.log(arr3[2][2]) // undefined
+console.log(arr3[2].length);
 
 
