@@ -9,7 +9,13 @@ console.log(constante_x);
 // constante = 44;
 var nohacerlo = 33;
 
-const ejemplo = `Hola {nombre} {apellidos}. ¿tienes {edad} años?`;
+const nombre = 'Julian';
+const apellidos = 'Hernandez Martinez';
+const edad = 'X'
+
+const ejemplo = `Hola ${nombre} ${apellidos}. ¿tienes ${edad} años?`;
+console.log (ejemplo);
+
 
 const persona = {
 	nombre: 'Pedro',
@@ -48,3 +54,18 @@ const nuevaFuncion = () => {}
 // Si esta arrow functions solo tiene una línea que en la que devolvemos el valor, se pueden obviar las llaves:
 
 const devuelveDos = () => 2;
+
+
+// spread ...
+
+function sum(x, y, z) {
+	return x + y + z;
+  }
+  
+const numbers = [1, 2, 3];
+  
+console.log(sum(...numbers));
+// Expected output: 6
+  
+console.log(sum.apply(null, numbers));
+// Expected output: 6
