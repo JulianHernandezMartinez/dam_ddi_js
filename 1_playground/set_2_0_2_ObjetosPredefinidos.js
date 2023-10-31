@@ -108,7 +108,11 @@ console.log(creaArray(4));
 
 // lista variable de argumentos
 
-/* Las funciones cuentan con una propiedad denominada arguments que es un objeto con la lista de argumentos pasados a la función. Mediante su propiedad length obtenemos el número de argumentos y accedemos a ellos mediante su índice (como un array).
+/* Las funciones cuentan con una propiedad denominada 
+arguments que es un objeto con la lista de argumentos 
+pasados a la función. Mediante su propiedad length 
+obtenemos el número de argumentos y accedemos a 
+ellos mediante su índice (como un array).
 */
 
 // Función que sólo lista argumentos
@@ -121,6 +125,8 @@ function listaArgumentos() {
 listaArgumentos();
 listaArgumentos(1, 2, 'texto');
 listaArgumentos([10, 20]);
+
+// ambitos de variables
 
 let a= 'global1';
 let b= 'global2';
@@ -140,6 +146,7 @@ function ambito() {
 ambito();
 console.log(a);
 console.log(b);
+// let c;
 console.log(c);
 
 
