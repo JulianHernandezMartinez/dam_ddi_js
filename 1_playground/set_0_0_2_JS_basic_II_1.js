@@ -11,12 +11,11 @@ funcion(...arr);
 
 let arr1 = [1,2,3];
 let arr2 = [4,5,6];
-let arr3 = [...arr1, ...arr2];
+let arr3 = [...arr1,...arr2];
 
 console.log(arr3);
 
 // O para crear un número indeterminado de parámetros en una función:
-
 
 const muchosArgumentos = (...argumentos) => {
     for (let i in argumentos) {
@@ -27,12 +26,22 @@ const muchosArgumentos = (...argumentos) => {
 let razones = ['porquesi', 'porqueno','porquetalvez' ]
 
 muchosArgumentos(razones); // log 0
+console.log('razones spreadas');
 
-muchosArgumentos('porquetu', 'porqueyo','porquenosotros',razones,'porquelaabuela'); // log 0, 1, 2, 3, 4
+muchosArgumentos(...razones); // log 2
 
+console.log('sin argumentos');
 
+muchosArgumentos(); //
 
+muchosArgumentos('porquetu','porqueyo','porquenosotros',...razones,'porquelaabuela'); // log 0, 1, 2, 3, 4
 
+const muchosArgumentos2 = (...argumentos) => {
+    for (let i in argumentos) {
+            console.log(argumentos);
+    }
+}
+muchosArgumentos2('porquetu', 'porqueyo','porquenosotros',razones,'porquelaabuela'); // log 0, 1, 2, 3, 4
 
 /*  Cuando definamos una función con spread 
 operator este siempre debe ser el último en 
@@ -41,7 +50,9 @@ REST operator */
 
 // destructuring
 
-let [a,b]= [1,2];
+console.log('destructuring')
+
+let [a,b] = [1,2];
 console.log(a,b);
 
 const persona = {
@@ -70,6 +81,7 @@ const mensaje1 = (activo) ?  'Activo' : 'No Activo';
 
 const activo2 = true;
 console.log(mensaje1);
+
 // También nos encontramos muchos:
 const mensaje2 = activo2 && 'Activo';
 console.log(mensaje2)

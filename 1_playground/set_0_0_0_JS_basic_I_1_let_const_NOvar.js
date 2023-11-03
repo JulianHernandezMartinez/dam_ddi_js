@@ -27,6 +27,7 @@ console.log(persona.nombre, persona.edad);
 let ejemplo2 = `Hola ${persona.nombre} ${persona.apellidos}. ¿tienes ${persona.edad} años?`;
 
 console.log('ejemplo2',ejemplo2);
+console.log('ejemplo2',`Hola ${persona.nombre} ${persona.apellidos}. ¿tienes ${persona.edad} años?`);
 
 const persona2 = persona;
 

@@ -19,4 +19,23 @@ console.log(mapeado)
 
 const suma = arr.reduce((acumulador,elemento)=>acumulador + elemento,0);
 
+// que hace este codigo??
 
+const arr1 = [0,1,2,3.4];
+const resultadomisterioso = arr1
+    .map(x=> x**2)
+    .filter(x=> x >= 4)
+    .reduce((acumulador, elemento)=> acumulador + elemento,0 );
+
+
+
+    
+// [0,1,2,3.4] --> [0,1,4,9,16] --> [4,9,16] -->29
+
+
+
+
+// [0,1,2,3.4] --> [0,1,4,11,56] --> [4,11,56] -->15,56
+
+
+console.log(resultadomisterioso);
