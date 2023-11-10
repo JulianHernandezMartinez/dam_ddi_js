@@ -101,8 +101,8 @@ function creaArrayBis(n, minbis=10, maxbis=40) {
 }
 
 console.log ("creaArrayBis")
+console.log(creaArrayBis(4,30,35)) // 
 console.log(creaArrayBis(4,30)) // 
-
 console.log(creaArrayBis(4));
 console.log(creaArray(4));
 
