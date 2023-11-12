@@ -17,8 +17,9 @@ console.log(mapeado)
 // después de aplicar una función a los 
 // elementos del array:
 
-const suma = arr.reduce((acumulador,elemento)=>acumulador + elemento,0);
+const suma = arr.reduce((acumulador,elemento)=>acumulador + elemento,6);
 
+console.log (`suma ${suma}`, suma);
 // que hace este codigo??
 
 const arr1 = [0,1,2,3.4];
