@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métodos y Propiedades de Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Métodos y Propiedades de Document</h1>
+  
+  <ul id="metodos-documento">
+    <!-- La lista de métodos se llenará mediante JavaScript -->
+  </ul>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Obtener el elemento ul para agregar la lista de métodos
+      var listaMetodos = document.getElementById('metodos-documento');
+
+      // Obtener todos los métodos de Document
+      var metodosDocument = Object.getOwnPropertyNames(Document.prototype).filter(function (propiedad) {
+        return typeof Document.prototype[propiedad] === 'function';
+      });
+
+      // Agregar cada método a la lista
+      metodosDocument.forEach(function (metodo) {
+        // Crear un elemento li para cada método
+        var listItem = document.createElement('li');
+
+        // Agregar el nombre del método y su descripción
+        listItem.textContent = metodo + ': ' + Document.prototype[metodo].toString();
+
+        // Agregar el elemento li a la lista
+        listaMetodos.appendChild(listItem);
+      });
+    });
+  </script>
+</body>
+</html>
