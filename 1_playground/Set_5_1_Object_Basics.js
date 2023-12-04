@@ -142,6 +142,11 @@ function logProperty(propertyName) {
   
 logProperty("name"); // ["Mikel", "Irigoyen"]
 logProperty("age");  // 65
+logProperty("ciclist");  // undefined
+
+
+console.log ('hhhhhhhhhhhhhhhhhhhhhhh')
+console.log(per.ciclist); // undefined
 
 function logPropertyBis(propertyName) {
     console.log(per.propertyName);
@@ -160,13 +165,14 @@ per.name[0] = "Miguelito";
 console.log(per.name);
 
 // adding members like properties and methods
+console.log(per);
 
 per["eyes"] = "hazel";
 per.farewell = function () {
   console.log("Bye everybody!");
 };
 
-per.farewell();
+per.farewell();  //"bye..."
 
 // bis
 
@@ -201,10 +207,13 @@ console.log(per.height); // 1.75m
 // The this keyword refers to the current object the code is being written inside — 
 // so in this case this is equivalent to person
 
+
+let varglobal = "Nicolas";
 const person1 = {
     name: "Chris",
     introduceSelf() {
-      console.log(`Hi! I'm ${this.name}.`);
+        this.name=varglobal;
+        console.log(`Hi! I'm ${person1.name}.`)
     },
 };
   
