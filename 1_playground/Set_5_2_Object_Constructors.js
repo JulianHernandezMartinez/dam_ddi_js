@@ -47,6 +47,9 @@ maria.introduceSelf();
 
 const phrase = 'el perro de san Roque no tiene Rabo porque ...';
 
+const lengthOfphrase = phrase.length;
+console.log(lengthOfphrase);
+
 console.log(phrase.slice(3,8)); // perro
 let trueorfalse = (phrase.slice(phrase.length-3,phrase.length)==='...');
 console.log(phrase.slice(phrase.length-3,phrase.length));
@@ -71,12 +74,14 @@ myObject.greet(); // Greetings from Madrid
 const str = myObject.toString(); // 
 console.log(str);
 
-console.log(Object.getPrototypeOf(myObject)); // Object { }
+console.log ('gggggggggggggggggggggggggggggggggggggggggggggggg')
 
-console.log('prototype chain of myDate');
+console.log(Object.getPrototypeOf(myObject)); // Object { }
 
 const myDate = new Date();
 let object = myDate;
+
+console.log('prototype chain of myDate');
 
 do {
   object = Object.getPrototypeOf(object);
@@ -89,11 +94,13 @@ do {
 
 
 
-// Shadowing properties // Sombrea // Oculta
+// Shadowing properties or methods // Sombrea // Oculta
 
 const mynewDate = new Date(1995, 11, 17);
 
 console.log(mynewDate.getYear()); // 95
+
+// new method .getYear()
 
 mynewDate.getYear = function () {
   console.log("something else!");
@@ -101,6 +108,7 @@ mynewDate.getYear = function () {
 
 mynewDate.getYear();
 console.log(mynewDate.getYear()); // undefined
+
 
 
 // Setting a prototype with...

@@ -145,6 +145,14 @@ logProperty("age");  // 65
 logProperty("ciclist");  // undefined
 
 
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+function logProperty2(propertyName1, propertyName2) {
+  console.log(pers[propertyName1][propertyName2]);
+}
+
+logProperty2("name","first"); // Mafalda
+
+
 console.log ('hhhhhhhhhhhhhhhhhhhhhhh')
 console.log(per.ciclist); // undefined
 
