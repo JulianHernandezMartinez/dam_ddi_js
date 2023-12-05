@@ -43,7 +43,6 @@ class Professor
     methods
         grade(paper)
         introduceSelf()
-
 */
 
 class Professor {

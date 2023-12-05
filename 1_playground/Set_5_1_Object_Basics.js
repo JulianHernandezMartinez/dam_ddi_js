@@ -245,17 +245,6 @@ const person1bis ={
 person1bis.introduceSelf();
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* SEUDOCODE
 
 class Professor

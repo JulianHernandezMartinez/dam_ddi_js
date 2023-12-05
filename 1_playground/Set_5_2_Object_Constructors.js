@@ -109,8 +109,6 @@ mynewDate.getYear = function () {
 mynewDate.getYear();
 console.log(mynewDate.getYear()); // undefined
 
-
-
 // Setting a prototype with...
 // Object.create
 
