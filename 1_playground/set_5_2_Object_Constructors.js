@@ -93,7 +93,7 @@ do {
 // null
 
 
-
+console.log("SHADOWING, EMSOMBRECIENDO")
 // Shadowing properties or methods // Sombrea // Oculta
 
 const mynewDate = new Date(1995, 11, 17);

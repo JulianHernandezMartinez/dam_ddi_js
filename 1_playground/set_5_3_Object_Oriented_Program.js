@@ -70,3 +70,34 @@ rafael.grade();
 pedro.grade();
 
 
+// Encapsulation
+
+/*
+Keeping an object's internal state private, and generally
+making a clear division between its public interface and 
+its private internal state, is called encapsulation.
+*/
+
+// Constructors are very similar to classes in OOP like Java o C#
+// Prototypes can be used in contructors
+// Constructors that uses (rely on) prototypes can use 
+// the prototypes properties and methods
+
+// prototype chain implements a "inheritance" mechanism
+// i.e. Student object whose prototype is Person, then it 
+// can inherit name and override introduceSelf()
+
+// diferences with OOP (Java & C#)
+
+// working with objects in JS is mush more lightweight
+// allows to In JavaScript, and is very often used to 
+// create objects without any separate class definition, 
+// either using a function or an object literal.
+
+// inheritance is more like a "delegation", the object 
+// delegate the task on its prototype
+
+// constructors and prototypes can be used to implement 
+// class-based OOP patterns, but manage inheritance is tricky
+// 
+// 

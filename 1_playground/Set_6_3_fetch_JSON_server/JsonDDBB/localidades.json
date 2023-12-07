@@ -1,0 +1,76 @@
+{ 
+    "progbooks": [
+    {
+      "title": "Clean Code",
+      "author": "Robert C Martin",
+      "id": 1
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas, Andrew Hunt",
+      "id": 2
+    },
+    {
+      "title": "Effective Java",
+      "author": "Joshua Bloch",
+      "id": 3
+    },
+    {
+      "title": "Design Patterns",
+      "author": "Gamma, Helm, Johnson & Vlissides",
+      "id": 4
+    }
+  ],
+  "localidades": [
+    {
+      "localidad": "Leganes",
+      "provincia": "Madrid",
+      "id": "1"
+    },
+    {
+      "localidad": "Getafe",
+      "provincia": "Madrid",
+      "id": "2"
+    },
+    {
+      "localidad": "Sabadell",
+      "provincia": "Barcelona",
+      "id": "3"
+    },
+    {
+      "localidad": "Pinto",
+      "provincia": "Madrid",
+      "id": "n5htzOp"
+    },
+    {
+      "localidad": "Osuna",
+      "provincia": "Sevilla",
+      "id": "Ng93bxI"
+    },
+    {
+      "localidad": "El Bejarin",
+      "provincia": "Granada",
+      "id": "iTJXmRM"
+    },
+    {
+      "localidad": "Benalua",
+      "provincia": "Granada",
+      "id": "ZKwQD7J"
+    },
+    {
+      "localidad": "Fonelas",
+      "provincia": "Granada",
+      "id": "FP8yrFT"
+    },
+    {
+      "localidad": "Belerda",
+      "provincia": "Granada",
+      "id": "WdgfMDp"
+    },
+    {
+      "localidad": "Diezma",
+      "provincia": "Granada",
+      "id": "GiI2Kkb"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 // console.log(valor);
 let valor = 7;
 console.log(valor);
-console.log(nohacerlo);  //Hoisting evitará error. Aun así…
+console.log(nohacerlo);  // Hoisting evitará error. Aun así…
 //console.log(constante_x);
 const constante_x = 23;
 console.log(constante_x);
@@ -16,6 +16,7 @@ const edad = 'X'
 const ejemplo = `Hola ${nombre} ${apellidos}. ¿tienes ${edad} años?`;
 console.log (ejemplo);
 
+// JS object
 
 const persona = {
 	nombre: 'Pedro',
