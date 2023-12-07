@@ -1,5 +1,10 @@
 
-'use strict'
+'use strict';
+console.log('PlayGround de JS! - Básicos');
+
+const mydiv = document.querySelector('#mydiv');
+mydiv.textContent = 'Terreno de Juegos - Overview';
+
 // spread operator ...
 
 const arr = [1,2,3];

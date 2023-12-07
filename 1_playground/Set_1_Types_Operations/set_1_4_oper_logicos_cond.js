@@ -1,10 +1,8 @@
-
+'use strict';
 console.log('PlayGround de JS!');
 
 const mydiv = document.querySelector('#mydiv');
 mydiv.textContent = 'Terreno de Juegos - operadores logicos, condicionales. comparadores';
-
-'use strict';
 
 let namePerson = "Julian";
 let numberPerson = 666666;

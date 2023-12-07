@@ -1,3 +1,10 @@
+'use strict';
+console.log('PlayGround de JS!');
+
+const mydiv = document.querySelector('#mydiv');
+mydiv.textContent = 'Terreno de Juegos - logical assignement';
+
+
 /* The logical AND assignment (&&=) operator only 
 evaluates the right operand and assigns to the 
 left if the left operand is truthy.*/
@@ -27,7 +34,7 @@ y &&= 1; // 1   |1|1
  the right operand and assigns to the left if the left 
  operand is falsy.*/
 
-const c = { duration: 50, title: '' };
+const c = { duration: 50, title: '' }; // used to initialize 
 
 c.duration ||= 10;
 

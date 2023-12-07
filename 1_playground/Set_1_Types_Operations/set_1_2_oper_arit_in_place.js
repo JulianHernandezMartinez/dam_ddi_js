@@ -56,10 +56,10 @@ console.log("OPERANDO CON 'IN_PLACE' -= , += ,*=, /= ");
  * mostramos el valor final (4)*/
   console.log(numberPerson=0) // (0)
   console.log(numberPerson+=1) // (1)
-  console.log(numberPerson*=1000) //(1000)
-  console.log(numberPerson/=100) //(10)
-  console.log(numberPerson-=6) //(4)
-  console.group(numberPerson) // (4)
+  console.log(numberPerson*=1000) // (1000)
+  console.log(numberPerson/=100) // (10)
+  console.log(numberPerson-=6) // (4)
+  console.log(numberPerson) // (4)
 
 console.log("TODOS 'IN_PLACE' y SEGUIDOS (0)+2->(2)*50->(100)/20->(5)-10->(-5)");
 

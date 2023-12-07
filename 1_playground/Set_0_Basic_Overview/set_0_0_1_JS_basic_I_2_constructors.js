@@ -1,8 +1,14 @@
+'use strict';
+console.log('PlayGround de JS! - Básicos');
+
+const mydiv = document.querySelector('#mydiv');
+mydiv.textContent = 'Terreno de Juegos - Overview';
+
 function Person(name){
     this.name=name;
 }
-const person1 =new Person('Alice')
-const person2= new Person('Mikael')
+const person1 = new Person('Alice')
+const person2 = new Person('Mikael')
 
 console.log(person1)
 console.log(person2)

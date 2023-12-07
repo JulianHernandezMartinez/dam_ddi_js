@@ -1,4 +1,8 @@
-'use strict'
+'use strict';
+console.log('PlayGround de JS! - Básicos');
+
+const mydiv = document.querySelector('#mydiv');
+mydiv.textContent = 'Terreno de Juegos - Overview';
 
 let array = [0,'cero', 'uno',1, 'dos', 'tres', 'cuatro',5];
 

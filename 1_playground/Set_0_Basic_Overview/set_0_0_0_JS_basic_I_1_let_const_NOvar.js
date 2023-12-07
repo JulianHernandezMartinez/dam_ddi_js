@@ -1,3 +1,8 @@
+'use strict';
+console.log('PlayGround de JS! - Básicos');
+
+const mydiv = document.querySelector('#mydiv');
+mydiv.textContent = 'Terreno de Juegos - Overview';
 
 // console.log(valor);
 let valor = 7;
