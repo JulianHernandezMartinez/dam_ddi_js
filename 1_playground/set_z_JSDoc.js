@@ -103,7 +103,7 @@ function parseTableAndDb = (params) =>  {
   // The `person` object for the previous functions:
   {
     name: "Fist Name", // string
-    laset: "Last Name", // string
+    last: "Last Name", // string
     isDeveloper: true, // boolean
     city: "Users City" // string
   }

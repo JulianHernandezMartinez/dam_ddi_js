@@ -1,9 +1,7 @@
-// https://reqres.in//api/users?page=2
-
+// Public Test Server
 // https://jsonplaceholder.typicode.com/
 
-let query = 'prog';
-fetch(`https://jsonplaceholder.typicode.com/todos/1`)
+fetch(`https://jsonplaceholder.typicode.com/todos`)
 .then((response) => response.json())
 .then((data) => {
   allitems = data;

@@ -6,7 +6,7 @@
 // $ sudo npm install -g json-server
 
 // start JSON Server 
-// $ cd dam_ddi_js/1_playground/Set_6_3_fetch_JSON_server/JsonDDBB
+// $ cd dam_ddi_js/1_playground/Set_6_Fetch_http/Set_6_3_fetch_JSON_server/JsonDDBB
 // $ json-server --watch db.json
 // $ json-server --watch localidades.json
 /* 
@@ -22,6 +22,13 @@ Home
 http://localhost:3000
 
 */
+fetch(`http://localhost:3000/progbooks`)
+.then((response) => response.json())
+.then((data) => {
+  allbooks = data;
+  console.log (allbooks);
+});
+
 
 fetch(`http://localhost:3000/localidades?provincia=Granada`)
 .then((response) => response.json())
