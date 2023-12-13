@@ -1,0 +1,12 @@
+
+    document.querySelector()
+    document.querySelectorAll()
+    document.createElement()
+    Element.innerHTML
+    Element.setAttribute()
+    Element.getAttribute()
+    EventTarget.addEventListener()
+    HTMLElement.style
+    Node.appendChild()
+    window.onload
+    window.scrollTo()
