@@ -1,3 +1,6 @@
+// https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript
+
+
 class Person {
     name;
   
@@ -46,6 +49,7 @@ spot.sleep(); // 'zzzzzzz'
 // "extends" Keyword 
 // "super()" superclass constructors Keyword passes (name) 
 // to Person Class
+
 class Professor extends Person {
     teaches;
   
@@ -73,7 +77,7 @@ const walsh = new Professor("Walsh", "Psychology");
 walsh.introduceSelf(); // 'My name is Walsh, and I will be your Psychology professor'
 
 walsh.grade("my paper"); // some random grade
-
+console.log(walsh.teaches); // Phycology
 // Encapsulation
 
 // private data properties
@@ -100,7 +104,7 @@ class Student extends Person {
   const summers = new Student("Summers", 2);
 
   summers.introduceSelf(); // Hi! I'm Summers, and I'm in year 2.
-  summers.canStudyArchery(); // true
+  console.log(summers.canStudyArchery()); // true
   
   console.log(summers.year); // SyntaxError "summers.#year" or undefined  
 
@@ -123,4 +127,4 @@ class Student extends Person {
   // "myExample.#somePrivateMethod()"-> SyntaxError
   
 console.log(myExample.somePublicMethod);
-console.log(myExample.somePrivateMethod());
+// console.log(myExample.somePrivateMethod());
