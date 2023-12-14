@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="shortcut icon" href="#">
+  <title>PlayGround de DOM - JS!</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>The DOM </h1>
+    <h2>The getElementByTagName()</h2>
+    <div id = "div1">
+      <ul id="myList">List
+        <li>Cofee </li>
+        <li>Tea </li>
+        <li>Milk </li>
+      </ul>
+      <p>the innerHTML of the second li</p>
+    </div>
+    <p>The innerHTML of the second li element is:</p>
+    <p id = "demo"></p>
+    <p>The tag name of all elements:</p>
+    <p id = "demo2"></p>
+    <p>Paragrath to remain  before </p>
+    <p id = "myp">Paragraph to delete</p>
+    <p>Paragrath to remain after</p>
+
+    <script>
+        const collection = document.getElementsByTagName("li");
+        document.getElementById("demo").innerHTML = collection[1].innerHTML;
+    
+    
+        const collection2 = document.getElementsByTagName("*");
+        console.log(collection2);
+        let text = "";
+        for (let i=0; i<collection2.length;i++) {
+            text +=collection2[i].tagName+"<br>"
+        } 
+        document.getElementById("demo2").innerHTML = text;
+        
+        // remove child 
+        const list = document.getElementById("myList");
+        list.removeChild(list.firstElementChild);
+
+        // remove parrafo
+
+        let p = document.getElementById("myp");
+        console.log(p.textContent);
+        // Obtiene la referencia del padre, y al padre le aplica la función
+        // removeChild
+        p.parentNode.removeChild(p);
+
+        const node = document.createElement("li");
+        const textnode = document.createTextNode("Water");
+        node.appendChild(textnode);
+        list.appendChild(node);
+
+    </script>
+  </main>
+</body>
+</html>

@@ -9,10 +9,11 @@ document.getElementsByTagName("p")[0].innerHTML = "Hello World!";
 document.getElementsByTagName("p")[1].innerHTML = "Goodbye World!"; 
 
 
-const divName = document.getElementByName('seconddiv');
+const divName = document.getElementsByName('seconddiv');
 const p1 = document.getElementsByName("p1");
 const p1bis = document.querySelector("#p1");
 console.log(p1bis.textContent);
+divName.textContent = 'HELLO DIV ThE second';
 console.log('KKKKKKKKKKKKKKKKKKKKKKKKKKKK')
 
 
@@ -22,7 +23,14 @@ console.log(paragraphs);
 const items = document.querySelectorAll('li');
 console.log(items);
 
-for (let item in items) {
-  items[item].innerHTML = '<b>list intem bolded</b>'
+for (let i=0; i<items.length;i++) {
+  items[i].innerHTML = '<b>list item bolded</b>'
 }
+
+for (let i=0; i<items.length;i++) {
+  items[i].textContent = '<b>list item bolded</b>'
+}
+
+
+https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
 
