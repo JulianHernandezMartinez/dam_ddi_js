@@ -6,8 +6,7 @@ console.log((paragraphs[0].nodeName));
 console.log((paragraphs[1].textContent));
 console.log((paragraphs[0].id));
 console.log(paragraphs.defaultView);
-
-
+ 
 
 // ejecuta esta función cuando se cargue el documento
 window.onload = function () {
@@ -16,6 +15,7 @@ window.onload = function () {
     const heading_text = document.createTextNode("el texto que desee");
     heading.appendChild(heading_text);
     document.body.appendChild(heading);
+    console.log(heading.textContent);
 };
 
 const story = document.body.querySelector(".story");
