@@ -6,15 +6,11 @@ console.log(`el html de ${mydiv1.innerHTML}`);
 
 
 document.getElementsByTagName("p")[0].innerHTML = "Hello World!"; 
-document.getElementsByTagName("p")[1].innerHTML = "Goodbye World!"; 
+document.getElementsByTagName("p")[5].innerHTML = "Goodbye World!"; 
 
 
-const divName = document.getElementsByName('seconddiv');
-const p1 = document.getElementsByName("p1");
-const p1bis = document.querySelector("#p1");
-console.log(p1bis.textContent);
-divName.textContent = 'HELLO DIV ThE second';
-console.log('KKKKKKKKKKKKKKKKKKKKKKKKKKKK')
+const divName = document.getElementById('div2');
+console.log(divName.textContent);
 
 
 const paragraphs = document.getElementsByTagName("p");
@@ -28,9 +24,9 @@ for (let i=0; i<items.length;i++) {
 }
 
 for (let i=0; i<items.length;i++) {
-  items[i].textContent = '<b>list item bolded</b>'
+  items[i].textContent = 'list item NO bolded'
 }
 
 
-https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
+// https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
 

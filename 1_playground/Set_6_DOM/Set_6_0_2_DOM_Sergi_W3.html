@@ -15,21 +15,19 @@
     <h1>The DOM </h1>
     <h2>The getElementByTagName()</h2>
     <div id = "div1">
-      <ul id="myList">List
-        <li>Cofee </li>
-        <li>Tea </li>
-        <li>Milk </li>
-      </ul>
-      <p>the innerHTML of the second li</p>
+        <ul id="myList">List
+            <li>Cofee </li>
+            <li>Tea </li>
+            <li>Milk </li>
+        </ul>
+        <p>The innerHTML of the second li element is:</p>
+        <p id = "demo"></p>
+        <p>The tag name of all elements:</p>
+        <p id = "demo2"></p>
+        <p>Paragrath to remain  before </p>
+        <p id = "myp">Paragraph to delete</p>
+        <p>Paragrath to remain after</p>
     </div>
-    <p>The innerHTML of the second li element is:</p>
-    <p id = "demo"></p>
-    <p>The tag name of all elements:</p>
-    <p id = "demo2"></p>
-    <p>Paragrath to remain  before </p>
-    <p id = "myp">Paragraph to delete</p>
-    <p>Paragrath to remain after</p>
-
     <script>
         const collection = document.getElementsByTagName("li");
         document.getElementById("demo").innerHTML = collection[1].innerHTML;
@@ -46,10 +44,11 @@
         // remove child 
         const list = document.getElementById("myList");
         list.removeChild(list.firstElementChild);
+        list.removeChild(list.lastElementChild);
 
         // remove parrafo
 
-        let p = document.getElementById("myp");
+        const p = document.getElementById("myp");
         console.log(p.textContent);
         // Obtiene la referencia del padre, y al padre le aplica la función
         // removeChild
