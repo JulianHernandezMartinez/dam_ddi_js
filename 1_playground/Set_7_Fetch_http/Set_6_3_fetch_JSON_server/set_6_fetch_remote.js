@@ -38,17 +38,22 @@ fetch(`http://localhost:3000/localidades?provincia=Granada`)
 });
 
 const newlocality = {
-  "localidad" : "Diezma",
+  "localidad" : "Lugros",
   "provincia" : "Granada"
 }
 
 console.log(JSON.stringify(newlocality));
 
 
-fetch(`http://localhost:3000/localidades?provincia=Granada`,{
+fetch(`http://localhost:3000/localidades`,{
   method: 'POST', 
   body: JSON.stringify(newlocality),
   headers: {
     "Content-type": "application/json; charset=UTF-8"
     }
-  });
+  })
+.then((response) => response.json())
+.then((data) => {
+  postresult = data;
+  console.log (postresult);
+});
