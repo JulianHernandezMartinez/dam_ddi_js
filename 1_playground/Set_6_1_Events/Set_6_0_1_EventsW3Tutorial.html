@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events W3 Tutorial</h1>
+<a href = "https://www.w3schools.com/js/js_events.asp">Tutorial in W3<br></a>
+<h2>Events--> Events Handlers--> </h2>
+<h3>Events</h3>
+<p>HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.</p>
+<p>Syntax with single quotas  <element event='some JavaScript'>  </p>
+<p>Syntax with double quotas  <element event="some JavaScript">  </p>
+<h3>Events Handlers</h3>
+
+<button id = "demo" onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<button id = "demo2">Time or Time Reset</button>
+
+<script>
+    const btn = document.querySelector("#demo2");
+    btn.addEventListener('click',()=> {
+        console.log('clicked!');
+        (btn.textContent === 'The time is?')? btn.textContent=Date(): btn.textContent='The time is?';
+    });
+</script>
+
+</body>
+</html>

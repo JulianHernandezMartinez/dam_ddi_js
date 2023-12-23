@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<p> Sin THIS </p>
+<p id="demo"></p>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p> Con THIS </p>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+
+<p> Sin THIS </p>
+<p> The events starting with "on"-something, e.g. "onmouseover" are related to mouse</p>
+<a href = "https://www.w3schools.com/jsref/dom_obj_event.asp">list of event in W3<br></a>
+<a href = "https://www.w3schools.com/jsref/dom_obj_event.asp"> Properties on event object</a>
+<a href = "https://www.w3schools.com/jsref/obj_mouseevent.asp">Properties on mouseevent object</a>
+
+<div id = "cont" style =  "width:150px; height:60px; border:thin solid
+silver"
+onmouseover = "document.getElementById('cont').style.borderColor='black';"
+onmouseout = "document.getElementById('cont').style.borderColor='red';">
+Contenidos SIN this
+</div>
+
+<p> Con THIS </p>
+<div id = "cont" style = "width:150px; height:60px; border:thin solid
+silver" 
+onmouseover = "this.style.borderColor ='black';"
+onmouseout = "this.style.borderColor='red';">
+Contenidos CON this
+</div>
+
+<p id = "p0" >Asignación de eventos desde código a objetos HTML</p>
+<button id = "b1">Paragraph to UPPER</button>
+
+<button id = "b2">To check ClassName and event current Target</button>
+<script>
+
+    const b1 = document.getElementById("b1");
+    const p0 = document.querySelector("#p0");
+    let str1 = "ole!";
+    console.log("1 "+ str1.toUpperCase());
+ 
+    b1.addEventListener('click',()=>{
+        console.log('clicked!');
+        console.log(p0.textContent);
+        p0.textContent = p0.textContent.toUpperCase();
+    });
+
+    const b2 = document.getElementById("b2");
+
+    b2.addEventListener('click', function(e){
+        console.log("clicked  b2");
+        console.log(this.className);
+        console.log(this.textContent);
+        console.log(e.currentTarget);
+    })
+
+</script>
+
+</body>
+</html>

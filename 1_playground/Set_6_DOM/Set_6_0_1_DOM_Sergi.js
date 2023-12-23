@@ -1,6 +1,6 @@
 'use strict'
 
-const mydiv1 = document.getElementById("div1")
+const mydiv1 = document.getElementById("div1");
 mydiv1.innerHTML = "<h1>Header cambiado</h1> <p>Paragraph GGGG 1 </p> <p>Paragraph HHHH 2 </p> <p>Paragraph JJJJ 3 </p>";
 console.log(`el html de ${mydiv1.innerHTML}`);
 

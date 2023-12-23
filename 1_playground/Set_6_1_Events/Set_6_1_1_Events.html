@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+
+<h2> Not to do (alert), BUT GOOD example</h2>
+<p ID="obj1">Object to practice the event</p>
+<p ID="obj2">Object to practice the event handler fails is called with ()</p>
+
+
+<h2>The click and this within ARROW function</h2>
+<p id ="my_element1">Text Test Paragraph for NOT arrow</p>
+<p id ="my_element2">Text Test Paragraph for ARROW, no this context</p>
+
+<script>
+
+function showMessage(){
+    alert("Alert message")
+}
+
+document.getElementById("obj1").onclick=showMessage;
+
+document.getElementById("obj2").onclick=showMessage(); // fails
+
+const my_element1 = document.querySelector("#my_element1");
+const my_element2 = document.querySelector("#my_element2");
+
+my_element1.addEventListener("click", function (e) {
+  console.log(this.className); // logs the className of my_element
+  console.log(e.currentTarget === this); // logs `true`
+});
+
+my_element2.addEventListener("click", (e)=> {
+  console.log(this.className); // logs the className of my_element
+  console.log(e.currentTarget === this); // logs `true`
+});
+
+</script>
+
+
+
+</body>
+</html>
