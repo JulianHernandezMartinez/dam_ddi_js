@@ -37,12 +37,14 @@ btn3.onclick = changeBgColour;
 
 btn3.ondblclick = () =>{btn3.removeEventListener((click)), changeBgColour};
 
-// 
+// the best choice looks like to set listeners on the elements 
+// and also allow to remove the listener.
 
 const btn4 = document.querySelector('#btn4');
 btn4.addEventListener('click',changeBgColour);
 btn4.addEventListener('dblclick',()=>{btn4.removeEventListener(('click'),changeBgColour)});
 
+// a second action can the tied to the event on the same element
 
 btn4.addEventListener('click',()=>{
     (btn4.textContent === 'changed')? btn4.textContent='CHANGED': btn4.textContent = 'changed';
