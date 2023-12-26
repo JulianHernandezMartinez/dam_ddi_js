@@ -17,10 +17,12 @@
       <button id = "btn1">button 1</button>
   </div>    
   <div id="div2">
+    <h2>Extra properties of event objects</h2>
     <input id = "textBox" type = "text"/>
       <div id ="output"></div>
   </div>
   <div id = "div3">
+    <h2>Prevent default</h2>
     <form>
       <div>
         <label for="fname">First name: </label>
@@ -35,7 +37,14 @@
       </div>
     </form>
     <p></p>
-    
+  </div>
+  <div id="div4">
+    <h2>Event Bubbling (inner first) / even capture (inner last)</h2>
+    <h3>Setting a listener on a parent node/element</h3>
+    <div id ="container4">
+      <button id = "btn4">Click me for bubbling - currenTarget event property / mouse ove for target event property</button>
+    </div>
+    <pre id = "output4"></pre>
   </div>
   </main>
   <script src="Set_6_0_1.js"></script>

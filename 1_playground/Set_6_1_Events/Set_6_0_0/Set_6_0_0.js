@@ -30,7 +30,9 @@ btn2.addEventListener(('mouseout'),changeBgColour); // mouse out of the element
 
 // btn2.removeEventListener(('dblclick'),changeBgColour);
 
-// on-something,e.g. onclick are event handler properties of some elements
+// on-something,e.g. onclick are event handler 
+// PROPERTIES of some elements
+// event handler properties not prefered
 
 const btn3 = document.querySelector('#btn3');
 btn3.onclick = changeBgColour;

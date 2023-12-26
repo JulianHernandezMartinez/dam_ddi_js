@@ -10,7 +10,12 @@
 <p>Syntax with double quotas  <element event="some JavaScript">  </p>
 <h3>Events Handlers</h3>
 
+<!-- the next line is only valid for ilustrating, the recommendation is 
+to no use inline event handlers, it become a mess to have both html and code
+mixed all the way, and there are not avilable functionality -->
 <button id = "demo" onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<!-- previous line is considered a BAD PRACTICE -->
+
 <button id = "demo2">Time or Time Reset</button>
 
 <script>
