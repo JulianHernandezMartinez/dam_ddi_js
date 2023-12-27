@@ -14,7 +14,7 @@ video.addEventListener("click", (event) => {
 box.addEventListener("click", () => box.style="display:none;");
 
 // by clicking the video when displayed, the click triggers the
-// vide play and also trigger the display none, so if we show again 
+// video play and also trigger the display none, so if we show again 
 // the video is being played. (it is called propagation)
 
 // Fixing the problem with stopPropagation

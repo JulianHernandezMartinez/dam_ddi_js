@@ -15,6 +15,7 @@ btn1.addEventListener('click',()=>{
 });
 
 const btn2 = document.querySelector('#btn2');
+
 function changeBgColour(){
     const rndColor = `rgb(${ramdon(255)},${ramdon(255)},${ramdon(255)})`;
     document.body.style.backgroundColor = rndColor;
