@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="shortcut icon" href="#">
+  <title>HTML forms</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>HTML Forms</h1>  
+    <p>This is my page</p> 
+    <form>
+      <fieldset>
+        <legend> Fruit juice size</legend>
+        <p>
+          <input type = "radio" name="size" id="size_1" value="small"/>
+          <label for="size_1">Small</label>
+        </p>
+        <p>
+          <input type = "radio" name="size" id="size_2" value="medium" checked/>
+          <label for="size_2">Medium</label>
+        </p>
+        <p>
+          <input type = "radio" name="size" id="size_3" value="big"/>
+          <label for="size_3">Big</label>
+        </p>
+        <!--fieldset help to organize the information in complex forms
+          and also are used by screen readers-->
+        <!--Labels must be linked with the input with for attribute 
+          related to the id of input-->
+        <!--Are mandatory to help screen readers to be helpful-->
+        <!--Are clickable so are also useful to make easy to select 
+          the choice, especially radio or checkboxes-->
+      </fieldset>
+
+      <fieldset>
+        <legend>Tastes</legend>
+        <input type ="checkbox" id="taste_1" name ="taste_banana" value="banana">
+        <label for="taste_1">Banana</label>
+        <input type="checkbox" id="taste_2" name ="taste_cherry" value ="cherry">
+        <label for="taste2">Cherry</label>
+      </fieldset>
+
+      <div>
+        <label for="username">Name: <span aria-label="required">*</span></label>
+        <input id="username" type="text" name="username" required />
+      </div>
+      <!--"aria-label" attribute means all the screen readers read it-->
+
+    </form>
+  </main>
+  <script src="Set_6_2_0.js"></script>
+</body>
+
+</html>

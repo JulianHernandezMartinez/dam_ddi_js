@@ -38,7 +38,7 @@ btn2.addEventListener(('mouseout'),changeBgColour); // mouse out of the element
 const btn3 = document.querySelector('#btn3');
 btn3.onclick = changeBgColour;
 
-btn3.ondblclick = () =>{btn3.removeEventListener((click)), changeBgColour};
+btn3.ondblclick = () =>{btn3.removeEventListener((click)), changeBgColour}; // not works
 
 // the best choice looks like to set listeners on the elements 
 // and also allow to remove the listener.
