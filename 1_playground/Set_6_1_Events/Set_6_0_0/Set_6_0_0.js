@@ -21,10 +21,11 @@ function changeBgColour(){
     document.body.style.backgroundColor = rndColor;
 };
 
-btn2.addEventListener(('dblclick'),changeBgColour);
 btn1.addEventListener(('focus'),changeBgColour); // enter in focus
 btn1.addEventListener(('blur'),changeBgColour);  // leaving focus
 
+
+btn2.addEventListener(('dblclick'),changeBgColour);
 btn2.addEventListener(('mouseover'),changeBgColour); // mouse over the element
 btn2.addEventListener(('mouseout'),changeBgColour); // mouse out of the element
 
@@ -37,8 +38,9 @@ btn2.addEventListener(('mouseout'),changeBgColour); // mouse out of the element
 
 const btn3 = document.querySelector('#btn3');
 btn3.onclick = changeBgColour;
+// btn3.onmouseover = changeBgColour;
 
-btn3.ondblclick = () =>{btn3.removeEventListener((click)), changeBgColour}; // not works
+btn3.ondblclick = () =>{btn3.EventListener((click)), changeBgColour}; // not works
 
 // the best choice looks like to set listeners on the elements 
 // and also allow to remove the listener.

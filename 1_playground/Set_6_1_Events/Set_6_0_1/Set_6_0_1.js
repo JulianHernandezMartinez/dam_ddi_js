@@ -25,7 +25,8 @@ const textBox = document.querySelector('#textBox');
 const output = document.querySelector('#output');
 
 textBox.addEventListener('keydown',(e)=>{
-    output.textContent = `You pressed ${e.key}`;
+    output.textContent = `You pressed ${e.key} with charcode ${e.charCode}`;
+    console.log(e);
 });
 // e or evt or event or x is the event objett and has its 
 // own properties depending on what element type is
@@ -64,7 +65,7 @@ container4.addEventListener('click',handleClick);
 function handleMouseover(e) {
   output4.textContent +=`you moused over a ${e.target.tagName} element \n`; 
 }
-container4.addEventListener('mouseover',handleMouseover);
+// container4.addEventListener('mouseover',handleMouseover);
 const btn4 = document.querySelector('#btn4');
 btn4.addEventListener('click',handleClick); // trigger button and parent
 
