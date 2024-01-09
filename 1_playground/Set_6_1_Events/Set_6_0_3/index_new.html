@@ -12,15 +12,25 @@
 
 <body>
   <main class="container">
-    <h1>Events Ojects</h1>   
-    <div id="div4">
-      <h2>Event Bubbling (inner first) / even capture (inner last)</h2>
-      <h3>Setting a listener on a parent node/element</h3>
-      <div id ="container4">
-        <button id = "btn4">Click me for bubbling - currenTarget event property / mouse ove for target event property</button>
+    <div>
+      <h1>Events Ojects</h1>   
+      <div id="div4">
+        <h2>Event Bubbling (inner first) / even capture (inner last)</h2>
+        <h3>Setting a listener on a parent node/element</h3>
+        <div id ="container4">
+          <button id = "btn4">Click me for bubbling - currenTarget event property (capture)</button>
+        </div>
       </div>
+      <pre id = "output4"></pre>
     </div>
-    <pre id = "output4"></pre>
+    <div id ="container">
+      <h2> Paragraphs - (bubbling useful)</h2>
+      <p>P1 - Paragraph</p>
+      <p>P2 - Paragraph</p>
+      <p>P3 - Paragraph</p>
+      <p>P4 - Paragraph</p>
+      <p>P5 - Paragraph</p>
+    </div>
   </main>
   <script src="Set_6_0_3.js"></script>
 </body>

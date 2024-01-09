@@ -15,3 +15,21 @@ container4.addEventListener('click',handleClick,{capture:true});
 
 const btn4 = document.querySelector('#btn4');
 btn4.addEventListener('click',handleClick); // trigger parent and button due to capture 
+
+
+// event bubbling matters and are not anoying
+
+function random(number) {
+  return Math.floor(Math.random() * number);
+}
+
+function bgChange() {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  return rndCol;
+}
+
+const container = document.querySelector("#container");
+
+container.addEventListener("click", (event) => {
+  event.target.style.backgroundColor = bgChange();
+});
