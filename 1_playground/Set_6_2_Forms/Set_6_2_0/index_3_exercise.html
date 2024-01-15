@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Source - https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#active_learning_building_a_form_structure -->  
 
 <head>
   <meta charset="UTF-8">
@@ -38,12 +39,12 @@
           <span>Name:</span>
           <strong><span aria-label="required">*</span></strong>
         </label>
-        <input type="text" id="name" name="username" required>
+        <input type="text" id="name" name="username" required> <!--required-->
         <label for="mail">
           <span>Email:</span>
           <strong><span aria-label="required">*</span></strong>
         </label>
-        <input type="text" id="mail" name="usermail" required>
+        <input type="email" id="mail" name="usermail" required> <!--type email-->
         <label for="pwd">
           <span>Password:</span>
           <strong><span aria-label="required">*</span></strong>
@@ -55,7 +56,7 @@
         <label for="card">Card type:</label>
         <select id="card" name ="usercard">
           <option value="visa">Visa</option>
-          <option value="mc">Mastercard</option>
+          <option value="mc" selected>Mastercard</option> <!-- selected-->
           <option value="amex">American Express</option>
         </select>
         <label for="number">
