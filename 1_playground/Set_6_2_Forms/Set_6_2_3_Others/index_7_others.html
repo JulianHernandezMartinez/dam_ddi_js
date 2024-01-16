@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="shortcut icon" href="#">
+  <title>HTML forms</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>HTML Forms - OTHERS- </h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Other_form_controls">Source WEB</a> 
+    <h2>Textarea</h2>
+    <textarea cols="30" rows="8"></textarea>
+
+    <h2>Select box</h2>
+    <select id="simple" name="simple">
+      <option>Banana</option>
+      <option selected>Cherry</option>
+      <option>Lemon</option>
+    </select>
+
+    <h2>Select box using optgroup</h2>
+    <select id="groups" name="groups">
+      <optgroup label="fruits">
+        <option>Banana</option>
+        <option selected>Cherry</option>
+        <option>Lemon</option>
+      </optgroup>
+      <optgroup label="vegetables">
+        <option>Carrot</option>
+        <option>Eggplant</option>
+        <option>Potato</option>
+      </optgroup>
+    </select>
+
+    <h2>Select box using value attribute</h2>
+    <select id="simple" name="simple">
+      <option value="banana">Big, beautiful yellow banana</option>
+      <option value="cherry">Succulent, juicy cherry</option>
+      <option value="lemon">Sharp, powerful lemon</option>
+    </select>
+    
+    <h2>Multiple choice Select cmd/ctrl</h2>
+    <select id="multi" name="multi" multiple size="2">
+      <optgroup label="fruits">
+        <option>Banana</option>
+        <option selected>Cherry</option>
+        <option>Lemon</option>
+      </optgroup>
+      <optgroup label="vegetables">
+        <option>Carrot</option>
+        <option>Eggplant</option>
+        <option>Potato</option>
+      </optgroup>
+    </select>
+    
+    <h2>Autocomplete box</h2>
+    <label for="myFruit">What's your favorite fruit?</label>
+    <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+    <datalist id="mySuggestion">
+      <option>Apple</option>
+      <option>Banana</option>
+      <option>Blackberry</option>
+      <option>Blueberry</option>
+      <option>Lemon</option>
+      <option>Lychee</option>
+      <option>Peach</option>
+      <option>Pear</option>
+    </datalist>
+
+    <h2>meter bars</h2>
+    <meter min="0" max="100" value="75" low="33" high="66" optimum="0">75</meter>
+
+    <h2>progress bar</h2>
+    <progress max="100" value="75">75/100</progress>
+
+  </main>
+  <script src="Set_6_2_0.js"></script>
+</body>
+
+</html>

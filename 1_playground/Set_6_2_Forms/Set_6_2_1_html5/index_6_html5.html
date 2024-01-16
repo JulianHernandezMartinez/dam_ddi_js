@@ -21,6 +21,7 @@
       <h3>Search field</h3>
       <input type="search" id="search" name="search" />
       <h3>Phone Number field</h3>
+      <input type="tel" id="tel" name="tel"/>
       
       <h3>URL field</h3>
       <input type="url" id="url" name="url" />
@@ -28,20 +29,8 @@
       <h3>Numeric field</h3>
       <input type="number" name="age" id="age" min="1" max="10" step="2" />
 
-      <h3>Slider controls</h3>
-      <label for="price">Choose a maximum house price: </label>
-      <input
-        type="range"
-        name="price"
-        id="price"
-        min="50000"
-        max="500000"
-        step="100"
-        value="250000" />
-      <output class="price-output" for="price"></output>
-
-      <h3>date and Time pickers</h3>
-      <h4>localtime</h4>
+      <h3>Date and Time pickers</h3>
+      <h4>Localtime</h4>
       <input type="datetime-local" name="datetime" id="datetime" />
       <h4>month</h4>
       <input type="month" name="month" id="month" />
@@ -57,13 +46,14 @@
       <input
         type="date"
         name="myDate"
-        min="2024-06-01"
-        max="2024-08-31"
+        min="2023-06-01"
+        max="2023-08-31"
         step="7"
         id="myDate" />
 
       <h3>Color picker control</h3>
       <input type="color" name="color" id="color" />
+      <input type="submit">
     </form>
 
     <h3>Patterns password example</h3>
@@ -75,6 +65,18 @@
       minúscula. Además debe contener 8 o más caracteres">
       <input type="submit">
     </form>
+    <h3>Slider controls</h3>
+    <label for="price">Choose a maximum house price: </label>
+    <input
+      type="range"
+      name="price"
+      id="price"
+      min="50000"
+      max="500000"
+      step="100"
+      value="250000" />
+    <output class="price-output" for="price"></output>
+
   </main>
   <script >
     const price = document.querySelector("#price");
