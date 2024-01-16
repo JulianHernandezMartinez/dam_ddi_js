@@ -23,6 +23,11 @@ JSON.parse('"foo"'); // "foo"
 JSON.parse('[1, 5, "false"]'); // [1, 5, "false"]
 JSON.parse("null"); // null
 
+console.log(JSON.parse("{}")); // {}
+console.log(JSON.parse("true")); // true
+JSON.parse('"foo"'); // "foo"
+console.log(JSON.parse('[1, 5, "false"]')); // [1, 5, "false"]
+JSON.parse("null"); // null
 //revive parameter -syntax JSON.prase(string,revive)
 // revive applies a function to transform the parse result
 
@@ -34,7 +39,7 @@ const obj1 = JSON.parse(
       ? value * 2 // return value * 2 for numbers
       : value, // return everything else unchanged
 );
-// { p: 10 }
+// { p: 10, y:y }
 console.log(obj1);
 
 const obj2 = JSON.parse('{"1": 1, "2": 2, "3": {"4": 4, "5": {"6": 6}}}', (key, value) => {
