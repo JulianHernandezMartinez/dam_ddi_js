@@ -7,8 +7,8 @@
 
 // start JSON Server 
 // $ cd /home/vboxuser/dam_ddi_js/1_playground/Set_6_Fetch_http/Set_6_3_fetch_JSON_server/JsonDDBB
-// $ json-server --watch db.json
-// $ json-server --watch localidades.json
+// $ 
+// $ json-server --watch bbdd.json
 /* 
 \{^_^}/ hi!
 
