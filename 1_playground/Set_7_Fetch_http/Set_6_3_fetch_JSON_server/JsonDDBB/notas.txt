@@ -1,6 +1,3 @@
-Calle2Medi0
-
-
 
 para arrancar el servidor JSON desde la consola o termina
 en el sitio de la BBDD (localidades.json)
