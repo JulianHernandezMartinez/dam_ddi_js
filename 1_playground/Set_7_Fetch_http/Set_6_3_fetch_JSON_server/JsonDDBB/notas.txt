@@ -1,0 +1,7 @@
+para arrancar el servidor JSON desde la consola o termina
+en el sitio de la BBDD (localidades.json)
+
+cd /home/vboxuser/FP/dam_ddi_js/1_playground/Set_7_Fetch_http/Set_6_3_fetch_JSON_server/JsonDDBB
+
+
+$json-server --watch localidades.json
