@@ -27,6 +27,10 @@ http://localhost:3000
 // JSON standard --> https://datatracker.ietf.org/doc/html/rfc8259
 // JSON grammar  --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#full_json_grammar
 
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// 
+// Español
+// https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
 
 fetch(`http://localhost:3000/progbooks`)
 .then((response) => response.json())

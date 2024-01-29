@@ -1,4 +1,48 @@
 {
+  "personas": [
+    {
+      "nombre": "Julian Hdez",
+      "localidad": "El Bejarin",
+      "codigo": "18515",
+      "id": 1
+    },
+    {
+      "nombre": "Pedro",
+      "localidad": "Valladolid",
+      "codigo": "50123",
+      "id": 2
+    },
+    {
+      "nombre": "Maria",
+      "localidad": "Cuenca",
+      "codigo": "12023",
+      "id": 3
+    },
+    {
+      "nombre": "Mar",
+      "localidad": "Cuenca",
+      "codigo": "12023",
+      "id": 4
+    },
+    {
+      "nombre": "Maria",
+      "localidad": "Cuenca",
+      "codigo": "12023",
+      "id": 5
+    },
+    {
+      "nombre": "Mario Perez",
+      "localidad": "Almeria",
+      "codigo": "04004",
+      "id": 6
+    },
+    {
+      "nombre": "Mariquilla",
+      "localidad": "Almeria",
+      "codigo": "04004",
+      "id": 7
+    }
+  ],
   "progbooks": [
     {
       "title": "Clean Code",
@@ -19,6 +63,11 @@
       "title": "Design Patterns",
       "author": "Gamma, Helm, Johnson & Vlissides",
       "id": 4
+    },
+    {
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen, Charles E. Leiserson etc",
+      "id": 5
     }
   ],
   "localidades": [
@@ -100,67 +149,7 @@
     {
       "localidad": "Benaojan",
       "provincia": "Malaga",
-      "id": "vS3bbke"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "s030osT"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "xqW0dhU"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "3gdVuUj"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "-eFhJs8"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "3tIMclU"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "41jnF6m"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "LMfCHjY"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "eQ6etaC"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "DhfG4A3"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "exGz-iX"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "i3tv_7H"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "UndnnPY"
+      "id": "1KmGM_G"
     }
   ]
 }
