@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Example</title>
+</head>
+<body>
+    <h1>Web Worker Example</h1>
+    <span id="span">Hello </span>
+    
+    <script>
+        // const span = document.querySelector('#span');
+        // console.log(span.textContent);
+        // const p = document.createElement('p');
+        // p.textContent =' texto del parrafo desde el script antes del worker';
+        // span.appendChild(p);
+        // Check if the browser supports web workers
+        if (window.Worker) {
+            // Create a new worker
+            const myWorker = new Worker('worker.js');
+
+            // Send a message to the worker
+            myWorker.postMessage('Hello from the main script!');
+
+            // Listen for messages from the worker
+            myWorker.onmessage = function(event) {
+                console.log('Received message from worker:', event.data);
+            };
+        } else {
+            console.error('Web workers are not supported in this browser.');
+        }
+        //const p2 = document.createElement('p');
+        //p2.textContent =' texto del parrafo desde el script despues del worker';
+        //span.appendChild(p2);
+
+    </script>
+</body>
+</html>
