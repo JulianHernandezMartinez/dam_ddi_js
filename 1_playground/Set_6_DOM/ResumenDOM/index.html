@@ -7,15 +7,29 @@
    </head>
 
    <body>
- 	<sección>
-   	<img
-     	src="bike.png"
-     	alt="A lovely bike logo" />
-   	<p>
-     	A link to the
-     	<a href="https://www.mozilla.org/">Mozilla homepage</a>
-   	</p>
- 	</section>
+        <section>
+            <img
+                src="bike.png"
+                alt="A lovely bike logo" />
+            <p>
+                A link to the
+                <a href="https://www.mozilla.org/">Mozilla homepage</a>
+            </p>
+        </section>
+        <template id="message">
+            <sección>
+              <h2 class="heading"></h2>
+              <p class="text"></p>
+            </section>
+         </template>
+
+         <div class="expand" data-expand>
+            <p>We are happy it can be collapse or expanded.</p>
+            <button data-click="sayHi">Say Hello!</button>
+            <button data-click="showMore">Show More</button>
+         </div>
+
+         <div id="div1"></div>
     <script src="script.js"></script>
-   </body>
+    </body>
 </html>
