@@ -1,5 +1,7 @@
 'use strict'
 
+// https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
+
 const promise1 = new Promise((resolve, reject) => resolve(1));
 promise1.then(v1 => v1 + 1).then(v2 => v2*2).then(v3 => console.log(`ultima consumicion ${v3}`));
 
@@ -27,8 +29,8 @@ async function myAsyncFunc3() {
     });
     const value = await promise;
     return "bien " + value;
-  }
-  myAsyncFunc3().then(value => alert(value)); // bien hecho
+}
+myAsyncFunc3().then(value => alert(value)); // bien hecho
 
 
 

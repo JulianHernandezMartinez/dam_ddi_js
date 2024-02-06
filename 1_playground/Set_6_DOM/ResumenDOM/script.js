@@ -33,6 +33,7 @@ link2[0].href = 'https://developer.mozilla.org/'
 const sect = document.querySelector("section");
 const para = document.createElement("p");
 para.textContent = "We hope you enjoyed the ride.";
+// sect.insertBefore(para,sect.firstChild);
 sect.appendChild(para);
 
 const para2 = document.createElement("p");
@@ -42,10 +43,10 @@ sect.appendChild(para2);
 
 // BORRADO (remove())
 
-sect.removeChild(para2);
+//sect.removeChild(para2);
 
-//para2.remove();
-//para2.parentNode.removeChild(para2);
+// para2.remove();
+para2.parentNode.removeChild(para2);
 
 para.setAttribute("id", "one");
 let id1 = para.getAttribute("id"); // one
@@ -59,6 +60,17 @@ let btnMore = document.querySelector('[data-click="showMore"]')
 const paragraphs3 = document.querySelectorAll("p");
 console.log(paragraphs3);
 
+//Events and Bubling
+
+const main = document.querySelector("#bubble");
+const btn1 = document.querySelector("#b1");
+const btn2 = document.querySelector("#b2");
+function handle(e) {
+   console.log(`${e.type} target: ${e.target.tagName}, current: ${e.currentTarget.tagName}`);
+}
+document.body.addEventListener("click", handle);
+main.addEventListener("click", handle);
+btn1.addEventListener("click", handle);
 
 
 
