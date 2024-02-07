@@ -1,7 +1,7 @@
 import { name1, number1, Person, sayHello, arr1, otherobj1 as newobj1 } from "./exportingModule.js";
 import { name2 } from "./exportingModule.js";
 import m from "./exportDefault.js"; // change name because is default 
-import { show } from "./usingExports.js";
+import { show } from "./usingReExports.js";
 
 // modules = strict mode
 // "as" aliases ¿to...avoid names repeated?
