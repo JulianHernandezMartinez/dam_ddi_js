@@ -90,7 +90,7 @@
     {
       "title": "Caperucita",
       "author": "Thomas H. Cormen, Charles E. Leiserson etc",
-      "id": 5
+      "id": 6
     }
   ],
   "localidades": [
@@ -125,114 +125,9 @@
       "id": "6"
     },
     {
-      "localidad": "Benalua",
-      "provincia": "Granada",
-      "id": "7"
-    },
-    {
-      "localidad": "Fonelas",
-      "provincia": "Granada",
-      "id": "8"
-    },
-    {
-      "localidad": "Belerda",
-      "provincia": "Granada",
-      "id": "9"
-    },
-    {
       "localidad": "Diezma",
       "provincia": "Granada",
       "id": "10"
-    },
-    {
-      "localidad": "Graena",
-      "provincia": "Granada",
-      "id": "11"
-    },
-    {
-      "localidad": "Bailen",
-      "provincia": "Jaen",
-      "id": "12"
-    },
-    {
-      "localidad": "Peligros",
-      "provincia": "Granada",
-      "id": "13"
-    },
-    {
-      "localidad": "Lugros",
-      "provincia": "Granada",
-      "id": "-YFfl9S"
-    },
-    {
-      "localidad": "Rosas",
-      "provincia": "Girona",
-      "id": "20lDXsJ"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "j9bdOUT"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "VoW1-Tj"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "b1maxFs"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "-bKaZ0M"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "59nD2WK"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "nRRpdwy"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "KErT4GT"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "l2f8GoQ"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "3izYrgg"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "bY6HUE7"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "Pkov3_s"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "-0sdWvi"
-    },
-    {
-      "localidad": "Benaojan",
-      "provincia": "Malaga",
-      "id": "BRLY9Iq"
     }
   ]
 }

@@ -31,7 +31,7 @@ http://localhost:3000
 // 
 // Español
 // https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
-
+/*
 fetch(`http://localhost:3000/progbooks`)
 .then((response) => response.json())
 .then((data) => {
@@ -47,7 +47,7 @@ fetch(`http://localhost:3000/localidades?provincia=Granada`)
   console.log('fetch localidades con filtro Provincia = Granada');
   console.log (allitems);
 });
-
+*/
 class Localidad {
   localidad;
   provincia;
@@ -59,6 +59,7 @@ class Localidad {
 
 const nuevalocalidad = new Localidad("Benaojan","Malaga");
 
+/*
 const newlocality = {
   "localidad" : "Lugros",
   "provincia" : "Granada"
@@ -67,7 +68,23 @@ const newlocality = {
 console.log(JSON.stringify(newlocality));
 
 console.log(JSON.stringify(nuevalocalidad));
+*/
 
+
+try {
+  const docRef = await fetch(`http://localhost:3000/localidades`,{
+    method: 'POST', 
+    body: JSON.stringify(nuevalocalidad),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+      }
+    });
+  console.log("Document written with ID: ", docRef.id);
+} catch (e) {
+  console.error("Error adding document: ", e);
+}
+
+/*
 fetch(`http://localhost:3000/localidades`,{
   method: 'POST', 
   body: JSON.stringify(nuevalocalidad),
@@ -81,3 +98,4 @@ fetch(`http://localhost:3000/localidades`,{
   console.log('resultado del post de Nueva Localidad')
   console.log (postresult);
 });
+*/

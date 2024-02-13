@@ -1,0 +1,19 @@
+Entorno.
+- Emuladores y entornos de desarrollo, pruebas E2E, integracion
+- Mockups y datos de pruebas (Generacion con el mismo SW)
+- Nivel de logging (console. log)/traceo/ debugging
+- IDEs pluggings
+    - Eslint (.eslintrc.json) - https://eslint.org/
+      $ npm init @eslint/config
+    - Prettier                - https://prettier.io/
+
+Ejemplos "nextjs" JSX (React components) y "reactfire" TSX (TypeSxcript (TS) with React components (JSX)--> TSX)
+
+-Guias de estilo y config de eslint
+
+--> https://github.com/airbnb/javascript
+--> https://github.com/standard/standard/tree/master
+
+
+
+
